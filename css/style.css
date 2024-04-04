@@ -1,3 +1,8 @@
+*{
+    text-decoration: none;
+ 
+}
+
 html {
 }
 
@@ -10,25 +15,41 @@ body{
 
 .container {
     max-width: 1220px;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
     position: sticky;
-    height: 100px;
-    border: 2px solid blue;
     top: 0;
-    background-color: aquamarine;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 2px solid blue;
+    
 }
 
+
+
+.title_container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
 
 h1{
     font-size: 2rem;
     border: 5px solid green
 }
 
+nav{
+   width: 30%;
+}
+
 section {
-    height: 200px;
+    width: 100%;
     border: 2px solid purple;
 }
 
