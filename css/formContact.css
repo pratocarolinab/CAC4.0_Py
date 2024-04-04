@@ -1,16 +1,12 @@
 
 
 section{
-
-    background-color: aquamarine;
 }
 
 .form_contact{
     width: 100%;
-    /* background-color: aqua; */
 }
 
 .contact_container{
-    width:75%;
-    background-color: aquamarine;
+    width:100%;
 }
