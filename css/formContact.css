@@ -1,10 +1,16 @@
 
 
-section{
+.section_contact{
+    width: 100%;
+    border-top-right-radius: 30%;
 }
 
-.form_contact{
-    width: 100%;
+form{
+
+}
+
+.contact_title{
+
 }
 
 .contact_container{

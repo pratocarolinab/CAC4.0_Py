@@ -1,0 +1,63 @@
+
+
+.home{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding: 8px;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-auto-flow: row; */
+}
+
+.cube{
+    grid-column: 1 ;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    border: 4px solid rgb(25, 25, 99);
+    padding: 4px;
+}
+
+
+.circle{
+    grid-column: 2;
+    width: 50%; /* Ancho del círculo en relación al contenedor padre */
+    justify-self: center;
+    align-self: center;
+    padding-top: 50%; /* Establece la relación de aspecto del círculo (50% del ancho) */
+    border-radius: 50%; /* Hace que el cuadrado se convierta en círculo */
+    overflow: hidden; /* Para ocultar cualquier parte de la imagen que se salga del círculo */
+    position: relative;
+    border: 1px solid rgb(67, 67, 224);
+    z-index: 100;
+   
+}
+
+.image_user{
+    position: absolute; /* Posiciona la imagen de forma absoluta dentro del círculo */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    top: 50%; /* Lo sitúa verticalmente en el centro */
+    left: 50%; /* Lo sitúa horizontalmente en el centro */
+    transform: translate(-50%, -50%)
+}
+
+
+/* 
+@media (max-width: 575px){
+    .home{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .cube{
+        grid-column: 1 ;
+    }
+    
+    
+    .circle{
+        grid-column: 1;
+    }
+} */
