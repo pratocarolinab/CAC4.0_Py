@@ -5,9 +5,9 @@ const goTop = (() => {
         (document.documentElement.scrollTop > 200) ? "add" : "remove"
       ]("visible")
   }
-  // button.onclick = () => {
-  //   window.scrollTo({
-  //     top:0, behavior:"smooth"
-  //   })
-  // }
+  button.onclick = () => {
+    window.scrollTo({
+      top:0, behavior:"smooth"
+    })
+  }
 })();
