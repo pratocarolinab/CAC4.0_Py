@@ -1,124 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/formContact.css">
-    <link rel="stylesheet" href="./css/btn-top.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body>
-    <button class="goTop" id="goTop">
-        <svg viewBox="0 0 24 24">
-          <path d="m4 16 8-8 8 8"></path>
-        </svg>
-      </button>
-    <!--Header-->
-    <header class="container">
-        
-         <!--NavBar-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PortFolio</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/all.css" />
+    </head>
+    <body>
+        <button class="goTop" id="goTop">
+            <svg viewBox="0 0 24 24">
+                <path d="m4 16 8-8 8 8"></path>
+            </svg>
+        </button>
+        <!--Header-->
+        <header class="container">
+            <!--NavBar-->
+            <input type="checkbox" id="menu-input" />
+            <label class="menu-burguer" for="menu-input">&#9776;</label>
+            <label class="menu-equ" for="menu-input">X</label>
             <nav class="main">
-            <ul class="links">
-                <li><a href="#">DATA USER</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ABOUT</a></li>                
-            </ul>
+                <ul class="links">
+                    <li><a href="#">DATA USER</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
             </nav>
 
-        <div class="title_container">
-            <h1>Portfolio Online</h1>
-        </div>
-    
-    </header>
-
-    <!--Main-->
-    <main class="container">
-
-        <!--Div: Sobre la pagina y sus funciones-->
-        <section class="home">
-            <div class="cube">
-               <h3>Data de Usuario </h3>
+            <div class="title_container">
+                <h1>Portfolio Online</h1>
             </div>
+        </header>
 
-            <div class="circle">
-              <img class="image_user" src="/assets/avatar_user.jpg" alt="">
-            </div>
-        </section>
+        <!--Main-->
+        <main class="container">
+            <!--Div: Sobre la pagina y sus funciones-->
+            <section class="home">
+                <div class="cube">
+                    <h3>Data de Usuario</h3>
+                </div>
 
-        <!---Div: Carrousel-->
-        <section class="">
-            <h2>TEST DIV 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minima voluptatum amet praesentium at, iusto reprehenderit. Reiciendis voluptas distinctio a. Accusantium saepe quod hic blanditiis fugiat officia non iusto labore.
-            In excepturi nisi assumenda explicabo eligendi aliquam eius ullam reprehenderit repellendus pariatur, hic maiores, consequatur officiis omnis ipsa magnam quo asperiores vel quidem, dolor voluptas. Perspiciatis ducimus optio quod repudiandae.
-            Quis eveniet necessitatibus sit libero rerum enim perferendis laborum doloribus minima, ipsa ad aut, nisi praesentium non! Quod in cum non, ut nobis voluptatibus corporis quae necessitatibus expedita, praesentium cumque?</p>
-        </section>
+                <div class="circle">
+                    <img class="image_user" src="/assets/avatar_user.jpg" alt="" />
+                </div>
+            </section>
 
-        <!-- Div: Otra información + Contacto-->
-        <section>
-            <h3>TEST DIV 3</h3>
-            <ol>
-                <li>Test</li>
-                <li>Test</li>
-                <li>TEST</li>                
-            </ol>
-        </section> 
+            <!---Div: Carrousel-->
+            <section class="">
+                <h2>TEST DIV 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minima voluptatum amet praesentium
+                    at, iusto reprehenderit. Reiciendis voluptas distinctio a. Accusantium saepe quod hic blanditiis
+                    fugiat officia non iusto labore. In excepturi nisi assumenda explicabo eligendi aliquam eius ullam
+                    reprehenderit repellendus pariatur, hic maiores, consequatur officiis omnis ipsa magnam quo
+                    asperiores vel quidem, dolor voluptas. Perspiciatis ducimus optio quod repudiandae. Quis eveniet
+                    necessitatibus sit libero rerum enim perferendis laborum doloribus minima, ipsa ad aut, nisi
+                    praesentium non! Quod in cum non, ut nobis voluptatibus corporis quae necessitatibus expedita,
+                    praesentium cumque?
+                </p>
+            </section>
+
+            <!-- Div: Otra información + Contacto-->
+            <section>
+                <h3>TEST DIV 3</h3>
+                <ol>
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>TEST</li>
+                </ol>
+            </section>
 
             <!--Form -->
-        <section class="section_contact">
-            <form action="POST" enctype="application/x-www-form-urlencoded">
-    
-                   <h2 class="contact_title">CONTACTATE</h2>
-        
+            <section class="section_contact">
+                <form action="POST" enctype="application/x-www-form-urlencoded">
+                    <h2 class="contact_title">CONTACTATE</h2>
 
-                <div class="contact_container">
-                    <div class="contact_group">
-                        <label class="contact_label form-label" for="completeName" ></label>
-                        <input class="contact_input form-control" type="text" name="completeName" id="completeName" placeholder="Nombre">
+                    <div class="contact_container">
+                        <div class="contact_group">
+                            <label class="contact_label form-label" for="completeName"></label>
+                            <input
+                                class="contact_input form-control"
+                                type="text"
+                                name="completeName"
+                                id="completeName"
+                                placeholder="Nombre"
+                            />
+                        </div>
+
+                        <div class="contact_group">
+                            <label class="contact_label" for="email"></label>
+                            <input
+                                class="contact_input form-control"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                            />
+                        </div>
+
+                        <div class="contact_group">
+                            <label class="contact_label" for="phone"></label>
+                            <input class="contact_input" type="tel" name="phone" id="phone" placeholder="Telefono" />
+                        </div>
+
+                        <div class="contact_group_message">
+                            <label class="contact_label_message" for="message"></label>
+                            <textarea
+                                class="contact_textarea"
+                                name="message"
+                                id="message"
+                                placeholder="Ingrese su consulta"
+                            ></textarea>
+                        </div>
+
+                        <button class="contact_button" type="submit">Enviar</button>
                     </div>
-            
-                    <div class="contact_group">
-                        <label class="contact_label" for="email"></label>
-                        <input class="contact_input form-control" type="email" name="email" id="email" placeholder="Email">
-                    </div>
-            
-                    <div class="contact_group">
-                    <label class="contact_label" for="phone"></label>
-                    <input class="contact_input" type="tel" name="phone" id="phone" placeholder="Telefono">
-                    </div>
-                    
-                    <div class="contact_group_message">
-                    <label class="contact_label_message" for="message"></label>
-                    <textarea class="contact_textarea" name="message" id="message" placeholder="Ingrese su consulta" ></textarea>
-                    </div>
-         
-                 <button class="contact_button" type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>    
-    </main>
+                </form>
+            </section>
+        </main>
 
-   <!-- Footer -->
-   <footer class="container">
-        <p>Copyright todos los derechos reservados - <span id="year"></span></p> 
+        <!-- Footer -->
+        <footer class="container">
+            <p>Copyright todos los derechos reservados - <span id="year"></span></p>
 
-        <!--Links a redes-->
+            <!--Links a redes-->
 
-        <h3>Buscanos en</h3>
-        <ul>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a><img src="" alt=""></li>
-            <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a><img src="" alt=""></li>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a><img src="" alt=""></li>
-            <li><a href="https://x.com/" target="_blank" >X</a><img src="" alt=""></li>
-        </ul>
-    </footer>
+            <h3>Buscanos en</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a><img src="" alt="" /></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a><img src="" alt="" /></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a><img src="" alt="" /></li>
+                <li><a href="https://x.com/" target="_blank">X</a><img src="" alt="" /></li>
+            </ul>
+        </footer>
 
-    <script src="./js/app.js"></script>
-    <script src="./js/btn-top.js"></script>
-    <script src="./js/year.js"></script>
-</body>
+        <script src="./js/app.js"></script>
+        <script src="./js/btn-top.js"></script>
+        <script src="./js/year.js"></script>
+    </body>
 </html>
