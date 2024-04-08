@@ -48,6 +48,10 @@ header::before {
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 @layer navBar {
     nav{
         width: 100%;  
@@ -112,8 +116,16 @@ section {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid orange;
 }
+
+.footer_social_links {
+    display: flex;
+    justify-content: center;
+} 
 
 /* ------ TABLETs ------ */
 @media only screen and (max-width: 769px) { 
