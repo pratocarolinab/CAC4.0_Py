@@ -1,7 +1,11 @@
 form{
+    position: relative;
+    top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
-    border: 2px solid indigo;
+    border-top-right-radius: 30%;
+    background-color: rgb(22, 22, 22);
+    
 
 }
 
@@ -10,6 +14,7 @@ form{
 }
 
 .contact_title{
+    color: aliceblue;
     padding: 5px;
 }
 
@@ -32,7 +37,9 @@ form{
 
 .section_contact{
     width: 100%;
-    border-top-right-radius: 30%;
+    position: absolute;
+    margin-top: 0;
+    background-color: rgb(255, 0, 64);
 
 }
 
