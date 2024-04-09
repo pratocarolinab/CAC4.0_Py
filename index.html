@@ -24,7 +24,7 @@
                 <ul class="nav_menu_items">
                     <li class="nav_menu_item"><a class="nav_menu_link" href="#">Datos del usuario</a></li>
                     <li class="nav_menu_item"><a class="nav_menu_link" href="#">Contacto</a></li>
-                    <li class="nav_menu_item"><a class="nav_menu_link" href="#">Portfolios</a>
+                    <li class="nav_menu_item"><a class="nav_menu_link" href="#carousel">Portfolios</a>
                     <ul>
                         <li><a href="#link_portfolio1">Portfolio 1</a></li>
                         <li><a href="#link_portfolio2">Portfolio 2</a></li>
@@ -66,19 +66,21 @@
             </section>
 
             <!-- Div: Otra información + Contacto-->
-            <section>
-                <h3>Contacto</h3>
+            <section class="section_comunicate">
+                <h3 class="comunicate_title">Comunicate</h3>
                 <ol>
-                    <li>Test</li>
-                    <li>Test</li>
-                    <li>TEST</li>
+                    <li><a class="comunicate_list" href="mailto:">Creador Portfolio1</a></li>
+                    <li><a class="comunicate_list" href="mailto:">Creador Portfolio2</a></li>
+                    <li><a class="comunicate_list" href="mailto:">Creador Portfolio3</a></li>
+                    <li><a class="comunicate_list" href="mailto:">Creador Portfolio4</a></li>
+                
                 </ol>
             </section>
 
             <!--Form -->
             <section class="section_contact">
                 <form action="POST" enctype="application/x-www-form-urlencoded">
-                    <h2 class="contact_title">CONTACTATE</h2>
+                    <h2 class="contact_title">Consultas</h2>
 
                     <div class="contact_container">
                         <div class="contact_group">
@@ -108,7 +110,7 @@
                             <input class="contact_input" type="tel" name="phone" id="phone" placeholder="Telefono" />
                         </div>
 
-                        <div class="contact_group_message">
+                        <div class="contact_group contact_group_message">
                             <label class="contact_label_message" for="message"></label>
                             <textarea
                                 class="contact_textarea"
@@ -116,6 +118,16 @@
                                 id="message"
                                 placeholder="Ingrese su consulta"
                             ></textarea>
+                        </div>
+
+                        <div class="contact_group">
+                            <label class="contact_suscribe" for="checkbox">Quiero suscribirme al newsletter</label>
+                            <button class="contact_checkbox" type="checkbox"></button>
+                        </div>
+
+                        <div class="contact_group">
+                            <label class="contact_suscribe" for="checkbox">Acepto los <a href="">términos y condiciones</a></label>
+                            <button class="contact_checkbox" type="checkbox"></button>
                         </div>
 
                         <button class="contact_button" type="submit">Enviar</button>
@@ -130,15 +142,20 @@
 
             <h3 class="title_social">Buscanos en</h3>
             <ul class="footer_social_links" >
-                <li class="links_social"><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img class="logo_social" src="CAC4.0_Py/images/flaticon/png/linkedin.png" alt="logo linkedin"/></a></li>
-                <li class="links_social"><a href="https://instagram.com/" target="_blank" rel="noopener"><img class="logo_social" src="/CAC4.0_Py/images/flaticon/png/instagram.png" alt="logo instagram"/></a></li>
-                <li class="links_social"><a id="logo_x" class="logo_social" href="https://x.com/" target="_blank" rel="noopener"><img src="CAC4.0_Py/images/flaticon/png/twitter_x.png" alt="logo X"/></a></li>
-                <li class="links_social"><a class="links_social" href="https://facebook.com/" target="_blank" rel="noopener"><img src="CAC4.0_Py/images/flaticon/png/facebook.png" alt="logo facebook"/></a></li>
+                <li class="links_social"><a class="anchor_social" href="https://www.linkedin.com/" target="_blank" rel="noopener"><img class="logo_social" src="CAC4.0_Py/images/flaticon/png/linkedin.png" alt="logo linkedin"/></a></li>
+                <li class="links_social"><a class="anchor_social" href="https://instagram.com/" target="_blank" rel="noopener"><img class="logo_social" src="/CAC4.0_Py/images/flaticon/png/instagram.png" alt="logo instagram"/></a></li>
+                <li class="links_social"><a class="anchor_social" id="logo_x" class="logo_social" href="https://x.com/" target="_blank" rel="noopener"><img class="logo_social" src="CAC4.0_Py/images/flaticon/png/twitter_x.png" alt="logo X"/></a></li>
+                <li class="links_social"><a class="anchor_social" class="links_social" href="https://facebook.com/" target="_blank" rel="noopener"><img class="logo_social" src="CAC4.0_Py/images/flaticon/png/facebook.png" alt="logo facebook"/></a></li>
             </ul>
 
             <p class="copy"> &copy; Copyright todos los derechos reservados - <span id="year"></span></p>
-            <div class="flaticon">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
-            <div class="flaticon" Iconos diseñados por><a href="https://www.flaticon.es/autores/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div><div class="flaticon">Iconos diseñados por <a href="https://www.flaticon.es/autores/khulqi-rosyid" title="khulqi Rosyid">khulqi Rosyid</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            <div class="credits_flaticon">
+            
+                <div class="flaticon">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+                <div class="flaticon" Iconos diseñados por><a href="https://www.flaticon.es/autores/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div><div class="flaticon">Iconos diseñados por <a href="https://www.flaticon.es/autores/khulqi-rosyid" title="khulqi Rosyid">khulqi Rosyid</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+
+            </div>
+
 
         </footer>
         

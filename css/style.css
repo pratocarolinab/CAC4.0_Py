@@ -62,7 +62,7 @@ header::before {
         width: 100%;
     }
 
-    li{
+    li:not(.links_social){
         display: inline-block;
         align-items: center;
         border: 1px solid black;
@@ -114,7 +114,7 @@ section {
     margin-top: 3%;
     border: 2px solid purple;
 }
-
+/*
 footer {
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ footer {
     display: flex;
     justify-content: center;
 } 
-
+*/
 /* ------ TABLETs ------ */
 @media only screen and (max-width: 769px) { 
     /* Hambur Menu */    

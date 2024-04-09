@@ -1,18 +1,67 @@
-
-
-.section_contact{
-    width: 100%;
-    border-top-right-radius: 30%;
-}
-
 form{
-
-}
-
-.contact_title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    border: 2px solid indigo;
 
 }
 
 .contact_container{
     width:100%;
 }
+
+.contact_title{
+    padding: 5px;
+}
+
+.contact_suscribe{
+    font-size: 14px;
+    
+}
+
+.contact_checkbox{
+    height: 14px;
+    width: 14px;
+    border-radius: 15px;
+}
+
+.contact_checkbox:hover{
+    cursor: pointer;
+    background-color: rgba(86, 35, 182, 0.678);
+    transition: background-color 0.5s;
+}
+
+.section_contact{
+    width: 100%;
+    border-top-right-radius: 30%;
+
+}
+
+.contact_group{
+    padding: 10px;
+
+}
+
+.contact_input{
+    padding: 5px;
+}
+
+.contact_button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(56, 44, 167, 0.568);
+}
+
+.contact_button:hover{
+    cursor: pointer;
+    background-color: rgba(86, 35, 182, 0.678);
+    color: white;
+    transition: all 0.8s;
+
+}
+
+
+
+
+
+
+
