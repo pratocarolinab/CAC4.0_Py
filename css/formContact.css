@@ -1,9 +1,10 @@
 form{
     position: relative;
-    top: 10px;
+    top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
-    border-top-right-radius: 30%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10%;
     background-color: rgb(22, 22, 22);
     
 
