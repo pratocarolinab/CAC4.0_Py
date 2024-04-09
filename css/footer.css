@@ -1,0 +1,28 @@
+.container_footer{
+    align-items: center;
+    border: 3px solid black;
+    padding: 5px;
+}
+.title_social{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.links_social{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.copy{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.flaticon{
+    font-size: 8px;
+}
+
+.links_social{
+    border-radius: 25px;
+    border: 1px solid lightsalmon;
+}
