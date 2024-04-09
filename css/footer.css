@@ -4,8 +4,9 @@
     padding: 5px;
 }
 .title_social{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: Verdana, sans-serif;
+    text-align: right;
+
 }
 .links_social{
     font-size: 20px;
@@ -23,6 +24,11 @@
 }
 
 .links_social{
+    box-sizing: border-box;
     border-radius: 25px;
-    border: 1px solid lightsalmon;
+    border: none;
+    background-color: white;
+
+
+
 }
