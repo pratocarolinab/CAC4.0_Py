@@ -1,10 +1,10 @@
 form{
-    position: relative;
-    top: 30px;
+    /* position: relative; */
+    /* top: 30px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
     border-top-right-radius: 50%;
-    border-bottom-right-radius: 10%;
+    border-bottom-right-radius: 100%;
     background-color: rgb(22, 22, 22);
     
 
@@ -38,7 +38,7 @@ form{
 
 .section_contact{
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 0;
     background-color: rgb(255, 0, 64);
 
