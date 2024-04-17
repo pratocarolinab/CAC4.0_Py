@@ -2,7 +2,7 @@ const goTop = (() => {
   let button = document.getElementById("goTop");
   window.onscroll = () => {
     button.classList[
-        (document.documentElement.scrollTop > 200) ? "add" : "remove"
+        (document.documentElement.scrollTop > 300) ? "add" : "remove"
       ]("visible")
   }
   button.onclick = () => {
