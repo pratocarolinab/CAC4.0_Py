@@ -6,7 +6,7 @@ const goTop = (() => {
         (document.documentElement.scrollTop > 300) ? "add" : "remove"
       ]("visible");
     header_shadow[0].classList[
-        (document.documentElement.scrollTop > 50) ? "add" : "remove"
+        (document.documentElement.scrollTop > 200) ? "add" : "remove"
       ]("header_No-shadow_Mini");
   }
   button.onclick = () => {

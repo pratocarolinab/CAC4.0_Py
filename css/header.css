@@ -24,6 +24,7 @@ header {
     z-index: 900;
     width: 100%;
     box-shadow: 0px 20px 25px 10px rgba(85, 30, 85, 0.8);
+    transition: 2s all ease-in-out;
 }
 
 header::before { 
@@ -41,7 +42,7 @@ header::before {
 .header_No-shadow_Mini {
     box-shadow: none;
     max-height: 100px;
-    transition: 1s all ease-in-out;
+    transition: 2s all ease-in-out;
 }
 
 .container_nav {
