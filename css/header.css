@@ -14,7 +14,7 @@
 header {
     position: sticky;
     top: 0;
-    height: auto;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +23,25 @@ header {
     border: 5px solid rgb(85, 30, 85);
     z-index: 900;
     width: 100%;
+    box-shadow: 0px 20px 25px 10px rgba(85, 30, 85, 0.8);
 }
 
 header::before { 
     content: ''; 
     width: 100%;
-    height: 100%;
+    max-height: 140px;
     position: absolute;
     top: 0;
     left: 0;
     -webkit-backdrop-filter: blur(4px) brightness(1);
     backdrop-filter: blur(4px) brightness(1);
     z-index: -5;
+}
+
+.header_No-shadow_Mini {
+    box-shadow: none;
+    max-height: 100px;
+    transition: 1s all ease-in-out;
 }
 
 .container_nav {
