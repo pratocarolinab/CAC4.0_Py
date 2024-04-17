@@ -1,3 +1,12 @@
+.section_contact{
+    width: 100%;
+    /* position: absolute; */
+    margin-top: 0;
+    /*background-color: rgb(255, 0, 64);*/
+    background: linear-gradient(to right, #FF512F, #B861E0, #7171E2);
+    margin-bottom: 4rem;
+}
+
 form{
     /* position: relative; */
     /* top: 30px; */
@@ -33,12 +42,7 @@ form{
     transition: background-color 0.5s;
 }
 
-.section_contact{
-    width: 100%;
-    /* position: absolute; */
-    margin-top: 0;
-    background-color: rgb(255, 0, 64);
-}
+
 
 .contact_group{
     padding: 10px;
