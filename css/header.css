@@ -14,7 +14,7 @@
 header {
     position: sticky;
     top: 0;
-    height: 140px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,7 @@ header {
     border: 5px solid rgb(85, 30, 85);
     z-index: 900;
     width: 100%;
-    box-shadow: 0px 20px 25px 10px rgba(85, 30, 85, 0.8);
-    transition: 2s all ease-in-out;
+    transition: 1s all ease-in-out;
 }
 
 header::before { 
@@ -39,10 +38,11 @@ header::before {
     z-index: -5;
 }
 
-.header_No-shadow_Mini {
+.header_shadow_Mini {
     box-shadow: none;
-    max-height: 100px;
-    transition: 2s all ease-in-out;
+    height: 140px;
+    box-shadow: 0px 10px 0px 0px rgba(85, 30, 85, 0.8);
+    transition: 1s all ease-in-out;
 }
 
 .container_nav {
