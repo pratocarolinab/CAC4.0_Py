@@ -8,7 +8,7 @@ body{
     font-size: 2rem;
     width: 100%;
     height: 100%;
-    border: 4px solid rgb(255, 0, 64);
+    border: 2px solid var(--color-azul);
 }
 
 .container {

@@ -9,7 +9,7 @@
     --color-grisoscuro: #B6B6B6;
     --color-grisclaro: #E9E9E9;
 
-    --gradiente: linear-gradient(to right, #B861E0, #7171E2, #1FC1AE);
+    --gradiente: linear-gradient(to right, #B861E0, #7171E2);
 
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', sans-serif;
