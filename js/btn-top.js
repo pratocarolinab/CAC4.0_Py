@@ -8,7 +8,7 @@ const goTop = (() => {
       ]("visible");
 
     header_shadow[0].classList[
-        (document.documentElement.scrollTop < 200) ? "add" : "remove"
+        (document.documentElement.scrollTop < 1) ? "add" : "remove"
       ]("header_shadow_Mini");
   }
 
