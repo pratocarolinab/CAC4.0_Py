@@ -82,7 +82,12 @@ header::before {
     .title_container{
         display: flex;
         justify-content: center;
-    }    
+    }
+
+    .nav_menu_items {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @layer Hamburger {

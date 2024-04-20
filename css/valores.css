@@ -5,17 +5,25 @@
     padding: 0px;
 }
 .valoresImage{
-    width: 40%;
+    width: 50%;
     height: auto;
 }
-.valoresText{
+
+.imgValoresImage {
+    height: 100%;
+}
+
+.valores-container{
     width: 50%;
     padding: 4rem;
+    height: auto;
+
 }
-.valoresTitle{
+.valoresText{
     color: var(--color-background);
     font-style: italic;
     font-size: 2.5rem;
+    text-align: center;
 }
 .valores_gradient {
     background: linear-gradient(90deg, var(--color-violeta) 0%, var(--color-azul) 100%);
@@ -25,7 +33,8 @@
 }
 .text2{
     color: var(--color-background);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -33,7 +42,7 @@
         width: 100%;
         padding: 0px;
     }
-    .valoresText{
+    .valores-container{
         width: 100%;
         padding: 1rem;
     }

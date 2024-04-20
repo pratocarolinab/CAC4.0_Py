@@ -1,3 +1,5 @@
+// Variables globales
+// Eventos de arrastrar y soltar
 
 document.addEventListener('DOMContentLoaded', () => {
     const circles = document.querySelectorAll('.circle_skill');
@@ -53,7 +55,10 @@ variables.forEach((variable, i) => {
     
 });
 
-  });
+});
+
+// Eventos de clic para cambiar el color de los círculos
+
 
 
 

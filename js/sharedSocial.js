@@ -1,5 +1,22 @@
-
 // ===================================================================================================
+// SHARE SOCIAL LINKS
+// =
+// This code is used to generate the share social links on the article pages.
+// ====
+// This code uses jQuery to select the share buttons and attach click events to them.
+// It also uses the encodeURIComponent() function to encode the article URL and main image URL for sharing.
+// ====
+// The open_window() function is used to open a new window for sharing.
+// ====
+// The ARTICLE_TITLE, ARTICLE_URL, and MAIN_IMAGE_URL variables are used to store the article title, URL, and main image URL for sharing.
+// ====
+// The share buttons are added to the HTML using the following code:
+// <div class="share-buttons">
+// 	<a href="#" class="share-google-plus">Google+</a>
+// 	<a href="#" class="share-linkedin">LinkedIn</a>
+// 	<a href="#" class="share-pinterest">Pinterest</a>
+// 	<a href="#" class="share-tumblr">Tumblr</a>
+// </div>
 $(function() {
 	const ARTICLE_TITLE =  document.title;
 	const ARTICLE_URL = encodeURIComponent(window.location.href);

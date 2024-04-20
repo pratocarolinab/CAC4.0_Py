@@ -1,3 +1,5 @@
+// Scroll to top button
+
 const goTop = (() => {
   let button = document.getElementById("goTop");
   let header_shadow = document.getElementsByTagName("header");
@@ -26,3 +28,5 @@ const goTop = (() => {
     })
   }
 })();
+
+// End of /js/btn-top.js

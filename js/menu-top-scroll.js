@@ -1,3 +1,4 @@
+// Scrolling effect for menu-top
 let lastScrollTop = 0;
 window.onscroll = function() {
   let st = window.pageYOffset || document.documentElement.scrollTop;
@@ -8,3 +9,4 @@ window.onscroll = function() {
   }
   lastScrollTop = st;
 };
+// End of /js/menu-top-scroll.js
