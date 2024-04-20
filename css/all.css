@@ -1,3 +1,4 @@
+/* Import all the necessary files */
 @import url("./reset.css");
 @import url("./style.css");
 @import url("./header.css");
@@ -13,4 +14,5 @@
 @import url("./team.css");
 @import url("./footer.css");
 @import url('./cases.css');
+/* End of all.css */
 

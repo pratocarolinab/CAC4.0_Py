@@ -1,6 +1,6 @@
+/* Footer */
 footer {
     background-color: #333;
-
 }
 
 .container_footer{
@@ -58,3 +58,5 @@ footer {
     border-radius: 10px;
     transition: all 0.5s;
 }
+
+/* footer end */

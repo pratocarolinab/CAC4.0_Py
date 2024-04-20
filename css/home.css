@@ -1,3 +1,4 @@
+/* CSS for the home page */
 .home{
     width: 95%;
     margin: 0 auto;
@@ -56,3 +57,5 @@
         grid-column: 1;
     }
 } */
+
+/* end of /css/home.css */

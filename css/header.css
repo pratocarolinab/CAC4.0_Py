@@ -1,3 +1,4 @@
+/* This file is used to style the header of the website */
 *{
     text-decoration: none; 
     margin: 0;
@@ -254,5 +255,6 @@ header::before {
         height: 80px;
         transition: 0.5s all ease-in-out;
     }
-
 }
+
+/* end of /css/header.css */

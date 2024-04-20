@@ -1,3 +1,4 @@
+/* This file contains the styles for the website */
 html {
     background-color: black;
 }
@@ -68,3 +69,5 @@ a{
 section {
     width: 100%;
 }
+
+/* end of /css/style.css */

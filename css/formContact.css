@@ -1,3 +1,4 @@
+/* This file contains the styling for the contact form */
 .section_contact{
     width: 100%;
     /* position: absolute; */
@@ -64,3 +65,5 @@ form{
     color: white;
     transition: all 0.8s;
 }
+
+/* end of /css/formContact.css */

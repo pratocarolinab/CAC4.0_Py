@@ -1,3 +1,5 @@
+/* This file contains the styles for the team section */
+
 .equipo {
     display: flex;
     flex-direction: column;
@@ -57,3 +59,5 @@
     text-align: center;
     color: var(--color-background);
 }
+
+/* end of team.css */

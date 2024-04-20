@@ -1,3 +1,4 @@
+/* Global variables */
 :root {
     --color-background: #181818;
     --color-body: #FFFFFF;
@@ -14,3 +15,4 @@
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', sans-serif;
 }
+/* Global styles */

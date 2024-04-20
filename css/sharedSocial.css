@@ -1,5 +1,5 @@
-
 /* ========================================================================================================================== */
+/* Social Media Icons */
 .share-buttons-row{
     height: 40px;
 
@@ -27,7 +27,6 @@
     background-position: center;
     background-size: 20px 20px;
 }
-
 
 .share-fb{
     background-color: #2d609b;
@@ -58,3 +57,5 @@
     background-color: #36465d;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI2LjY2OCAwaC0yMS4zMzRjLTIuOTM0IDAtNS4zMzQgMi40LTUuMzM0IDUuMzM0djIxLjMzMmMwIDIuOTM2IDIuNCA1LjMzNCA1LjMzNCA1LjMzNGgyMS4zMzRjMi45MzMgMCA1LjMzMi0yLjM5OCA1LjMzMi01LjMzNHYtMjEuMzMyYy0wLTIuOTMzLTIuMzk5LTUuMzM0LTUuMzMyLTUuMzM0ek0yMi44NjYgMjUuNzcxYy0wLjk0MiAwLjQ0My0xLjc5OCAwLjc1Ni0yLjU2MyAwLjkzNi0wLjc2NSAwLjE3OC0xLjU5MyAwLjI2Ny0yLjQ4MSAwLjI2Ny0xLjAxMCAwLTEuNjA1LTAuMTI3LTIuMzgxLTAuMzgxLTAuNzc1LTAuMjU2LTEuNDM4LTAuNjIxLTEuOTg0LTEuMDkwLTAuNTQ5LTAuNDczLTAuOTI4LTAuOTc1LTEuMTQtMS41MDZzLTAuMzE3LTEuMzAzLTAuMzE3LTIuMzEzdi03Ljc0NGgtM3YtMy4xMjdjMC44NjctMC4yODEgMS44NzMtMC42ODUgMi40OS0xLjIxMSAwLjYyLTAuNTI3IDEuMTE2LTEuMTU4IDEuNDktMS44OTYgMC4zNzUtMC43MzYgMC42MzMtMS42NzYgMC43NzQtMi44MTVoMy4xNDF2NS4xMDhoNS4xMDV2My45NDFoLTUuMTA2djUuNjYyYzAgMS4yODEtMC4wMTcgMi4wMjAgMC4xMTkgMi4zODMgMC4xMzUgMC4zNjEgMC40NzMgMC43MzYgMC44NDEgMC45NTMgMC40ODkgMC4yOTMgMS4wNDcgMC40MzkgMS42NzYgMC40MzkgMS4xMTggMCAyLjIzMS0wLjM2MyAzLjMzNi0xLjA5MHYzLjQ4MnoiPjwvcGF0aD48L3N2Zz4=);
 }
+
+/* end */
