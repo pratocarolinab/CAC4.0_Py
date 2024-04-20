@@ -22,10 +22,15 @@ body{
 }
 
 h1{
-    border: 5px solid green;
-
+    border: 5px solid var(--color-violeta);
+    border-radius: 20px;
     font-family: var(--roboto-mono);
     font-size: 4rem;
+    padding: 0 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 h2{
@@ -58,6 +63,4 @@ a{
 
 section {
     width: 100%;
-    margin-top: 3%;
-    border: 2px solid purple;
 }
