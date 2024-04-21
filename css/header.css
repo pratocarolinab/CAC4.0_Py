@@ -16,7 +16,7 @@
 header {
     position: sticky;
     top: 0;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ header {
 header::before { 
     content: ''; 
     width: 100%;
-    max-height: 140px;
+    max-height: 120px;
     position: absolute;
     top: 0;
     left: 0;
@@ -146,19 +146,18 @@ header::before {
         display: flex;
         color: rgb(255, 255, 255);
         border-radius: 10px;
-        font-size: 3ch;
+        font-size: 4ch;
         justify-content: center;
         align-items: center;
         width: 40px;
         height: 40px;   
         margin: 0;
-        margin-top: 8px;
         margin-left: 8px;
         padding: 0;
         cursor: pointer;
-        position: fixed;
         top: 0.5%;
-        left: 5px;        
+        left: 5px;
+        align-items: center;
     }  
     .menu-burguer:hover {
         background-color: #F33;
@@ -173,7 +172,7 @@ header::before {
     #menu-input:checked  ~ .nav_menu{
         display:flex;
         color: #FFF;
-        padding: 0 0 10px 0;
+        padding: 0 10px 0 10px;
         transition: background 1s ease-in-out;
         text-align: start;
         align-items: flex-end;
@@ -193,11 +192,10 @@ header::before {
         border: none;
         cursor: pointer;      
         text-align: center;
-        position: fixed;
-        top: 0.5%;
-        left: 5px;
-        border: 4px solid orange;
-        font-size: 3ch;
+        position: absolute;
+        left: 14px;
+        /*border: 4px solid orange;*/
+        font-size: 4ch;
         justify-content: center;
         align-items: center;
         width: 45px;
@@ -210,10 +208,19 @@ header::before {
     }
 
     #menu-input:checked .nav_menu{
-        display:block;   
+        display:flex;
+        justify-content: flex-end;
         transition: all 5s ease-in-out;
-          
     }
+
+
+
+    #menu-input:checked ~ .title_container{
+        display:flex;
+        justify-content: flex-end;
+        transition: all 5s ease-in-out;
+    }
+
     .nav_menu_item:active {
         background-color: #F33;
     }
@@ -223,18 +230,18 @@ header::before {
         flex-direction: column;
         position: absolute;
         margin: 0;
-        margin-top: 30px;
+        margin-top: 50px;
         padding: 0;
         top: 50px;
         left: 0;
-        gap: 5px;
+        gap: 0;
         transition: all 5s ease-in-out;
 
     }
     .nav_menu_item {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 10px;
         transition: all 5s ease-in-out;
     }
     .nav_menu_link {
@@ -247,8 +254,9 @@ header::before {
 
     .container_nav {
         display: flex;
-        justify-content: flex-end;
-
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .title_container{
         display: flex;
@@ -265,5 +273,3 @@ header::before {
         transition: 0.5s all ease-in-out;
     }
 }
-
-/* end of /css/header.css */

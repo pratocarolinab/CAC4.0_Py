@@ -4,8 +4,7 @@
     /* position: absolute; */
     margin-top: 0;
     /*background-color: rgb(255, 0, 64);*/
-    background: linear-gradient(to right, #FF512F, #B861E0, #7171E2);
-    margin-bottom: 4rem;
+    background: linear-gradient(to right, #7171E2, #B861E0);
 }
 
 form{
@@ -15,7 +14,7 @@ form{
     padding: 5px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 100%;
-    background-color: rgb(22, 22, 22);
+    background: #181818;
 }
 
 .contact_container{
@@ -65,5 +64,3 @@ form{
     color: white;
     transition: all 0.8s;
 }
-
-/* end of /css/formContact.css */
