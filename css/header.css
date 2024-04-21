@@ -118,7 +118,11 @@ header::before {
     body {
         background-color: rgb(24, 24, 24);
     }
-   
+
+    header {
+        height: 80px;
+    }
+
     .container_nav {
         display: flex;
         justify-content: flex-end;
@@ -130,7 +134,7 @@ header::before {
     }  
     .header_shadow_Mini {
         box-shadow: none;
-        height: 80px;
+        height: 100px;
         transition: 0.5s all ease-in-out;
     }
 }
@@ -249,10 +253,15 @@ header::before {
     .title_container{
         display: flex;
         justify-content: center;
-    }  
+    }
+
+    header {
+        height: 80px;
+    }
+
     .header_shadow_Mini {
         box-shadow: none;
-        height: 80px;
+        height: 100px;
         transition: 0.5s all ease-in-out;
     }
 }
