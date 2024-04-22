@@ -28,5 +28,3 @@ window.onload = function() {
     passImages();
     setInterval(passImages, 2500);
 }
-
-// The code above creates a slider effect on the website using the setInterval function.

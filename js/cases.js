@@ -3,6 +3,7 @@
 // The API used is randomuser.me, which provides a free API for generating random user data.
 // The API is called using the fetch() method, which returns a Promise that resolves to a Response object.
 // If an error occurs during the fetch, it is caught and logged to the console.
+
 let promise = fetch("https://randomuser.me/api/?page=3&results=3&seed=ttttttaa&nat=es&inc=gender,name,dob,picture&noinfo")
     .then((response) => response.json())
     .then((data) => {
@@ -13,24 +14,16 @@ let promise = fetch("https://randomuser.me/api/?page=3&results=3&seed=ttttttaa&n
 
             let cases_item = document.querySelectorAll(".case-item");
             let case_item_name = document.querySelectorAll(".case-item-name");
-            const element = cases_item[i].setAttribute("src", img_case);
-            const element_name = case_item_name[i].innerHTML = name;
+            let element = cases_item[i].setAttribute("src", img_case);
+            let element_name = case_item_name[i].innerHTML = name;
         }
     })
     .catch((error) => {
         console.error(error);
     });
 
-let valores  = document.getElementById("navValores");
 
-window.onresize = function() {
-    let anchoV1 = window.innerWidth;
-    if (anchoV1 < 6000){
-        valores.style.display = "flex";
 
-    } else { valores.style.display = "flex"; }
-
-}
 
 
 
@@ -65,5 +58,3 @@ window.onresize = function() {
     passImages();
     setInterval(passImages, 2500);
 }*/
-
-// The code above creates a slider effect on the website using the setInterval function.

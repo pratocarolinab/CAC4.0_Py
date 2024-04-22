@@ -3,4 +3,3 @@
 const date = new Date();
 const year = date.getFullYear();
 document.getElementById("year").innerText = year;
-// End of /js/year.js

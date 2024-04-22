@@ -241,12 +241,13 @@ header::before {
     .nav_menu_item {
         width: 100%;
         margin: 0;
-        padding: 10px;
+        border: 1px solid black;
         transition: all 5s ease-in-out;
     }
     .nav_menu_link {
         display: block;
         width: 100%;
+        padding: 10px;
     }
     .nav_menu_link:hover {
         background-color: burlywood;

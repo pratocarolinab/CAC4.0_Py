@@ -56,18 +56,3 @@ variables.forEach((variable, i) => {
 });
 
 });
-
-// Eventos de clic para cambiar el color de los círculos
-
-
-
-
-
-
-
-
-
-
-    
-  
-  
