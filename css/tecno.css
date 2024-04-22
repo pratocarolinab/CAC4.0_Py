@@ -9,11 +9,9 @@
     grid-auto-flow: column;
     grid-auto-columns: 50%;
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow-x: auto;
     
 }
-
-
 
 .tecno{
     width: 95%;
@@ -25,19 +23,31 @@
 
 .circle{
     grid-column: 1;
-    width: 50%; /* Ancho del círculo en relación al contenedor padre */
+    width: 50%; 
     justify-self: center;
     align-self: center;
-    padding-top: 48%; /* Establece la relación de aspecto del círculo (50% del ancho) */
+    padding-top: 46%;
     border-radius: 50%; 
     border-bottom: 2px solid rgba(255, 255, 255, 0.911);
     border-top: 2px solid rgb(0, 0, 0);
     overflow: hidden; 
     position: relative;
-    background: radial-gradient(circle, rgba(253,254,253,0.6979166666666667) 6%, rgba(141,142,141,1) 52%, rgba(116,117,116,1) 62%, rgba(20,20,20,1) 77%);   
+    background: radial-gradient(circle, rgba(253,254,253,0.6979166666666667) 6%, rgba(141,142,141,1) 52%, rgba(116,117,116,1) 62%, rgba(20,20,20,1) 77%); 
+    transform: scale(1); 
+    animation: press 1s infinite alternate;  
 }
 
 
+
+
+@keyframes press {
+0% {
+  transform:  scale(1); 
+}
+100% {
+  transform: scale(1.02); 
+}
+}
 
 .image_user{
     position: absolute; 
@@ -46,6 +56,7 @@
     left: 50%; 
     transform: translate(-50%, -50%)
 }
+
 
 
 @media (min-width: 380px){
@@ -58,11 +69,6 @@
     }
     .tecno{
         width: 100%;
-        /* display: grid; */
       
-    }
-    
-    .circle{
-        /* grid-column: 1; */
     }
 }
