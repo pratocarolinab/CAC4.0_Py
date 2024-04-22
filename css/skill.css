@@ -3,8 +3,7 @@
 .skill{
     position: relative;
     display: grid;
-    width: 95%;
-    margin: 0 auto;
+    width: 50%;
     height: 100px;
     gap: 2px;
     grid-template-columns:25% 25% 25% 25%;

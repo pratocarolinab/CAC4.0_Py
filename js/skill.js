@@ -1,17 +1,16 @@
-// Variables globales
-// Eventos de arrastrar y soltar
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const circles = document.querySelectorAll('.circle_skill');
     const circles_colorous = document.querySelectorAll('.circles_colorous');
     const circle_container_a = document.querySelectorAll('.circle_container > a')
    
-  // Matriz para almacenar las variables de cada círculo
+
 let variables = new Array(circle_container_a.length).fill(0);
 
 circle_container_a.forEach((circle, i) => {
     const hoveredIndex = Array.from(circle_container_a).indexOf(circle);
-    let variable = variables[i]; // Obtener la variable para este círculo
+    let variable = variables[i]; 
 
     circle.addEventListener('touchstart', (event) => {
         event.preventDefault();
@@ -30,13 +29,13 @@ circle_container_a.forEach((circle, i) => {
                 variable = Math.max(variable - 1, 0);
             }
             startY = currentY;
-            fillCircle(variable, i); // Pasar el índice del círculo para actualizar solo ese círculo
+            fillCircle(variable, i);
         }
     });
 
     circle.addEventListener('touchend', function () {
         isDragging = false;
-        variables[i] = variable; // Guardar el valor de la variable cuando se suelta el dedo
+        variables[i] = variable; 
         console.log(variables)
     });
 });
@@ -49,7 +48,7 @@ function fillCircle(percent, index) {
     circle.querySelector('.circle_html').style.strokeDashoffset = -porCiento;
 }
 
-// Llamar a fillCircle para inicializar la posición de todos los círculos
+
 variables.forEach((variable, i) => {
     fillCircle(variable, i);
     
