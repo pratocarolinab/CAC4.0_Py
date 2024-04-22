@@ -28,7 +28,7 @@
     text-align: center;
 }
 .valores_gradient {
-    background: linear-gradient(90deg, var(--color-violeta) 0%, var(--color-azul) 100%);
+    background: linear-gradient(90deg, #B861E0 0%, #7171E2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

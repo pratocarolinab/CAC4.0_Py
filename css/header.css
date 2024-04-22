@@ -21,7 +21,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(90deg, var(--color-violeta) 0%, var(--color-azul) 100%);
+    background: var(--gradient);
     z-index: 900;
     width: 100%;
     transition: 0.5s all ease-in-out;
@@ -41,19 +41,23 @@ header::before {
 
 .header_shadow_Mini {
     box-shadow: none;
-    height: 140px;
+    height: 110px;
     transition: 0.5s all ease-in-out;
 }
 
 .container_nav {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .title_h1 {
     font-weight: bold;
-    color: linear-gradient(45deg, var(--color-violeta) 0%, var(--color-azul) 100%);
-    color: #D9D9D9;
+    background: linear-gradient(90deg, plum 0%, rgb(31, 193, 174) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
 }
 
 
@@ -68,12 +72,17 @@ header::before {
         width: 100%;
     }
 
-    li:not(.links_social){
+    .nav_menu_link {
         display: inline-block;
         align-items: center;
-        border: 1px solid black;
-        background-color: rgb(161, 50, 165);
-        padding: 5px;
+        border: 1px solid var(--color-background);
+        border-radius: 5px;
+        padding: 10px 20px !important;
+        transition: all 0.5s ease-in-out;
+        background-color: rgb(255, 56, 0, 0.7);
+    }
+    .nav_menu_link:hover {
+        background-color: rgb(255, 56, 0, 0.2);
     }
 
     li > a{
@@ -99,7 +108,6 @@ header::before {
         width: 24px;
         height: 24px;
         border-radius: 5px;
-        border: 2px solid #30343F;
     }
     .menu-burguer {
         display: none;
@@ -116,7 +124,7 @@ header::before {
 /* -------- Mobile -------- */
 @media only screen and (max-width: 599px) {
     body {
-        background-color: rgb(24, 24, 24);
+        background-color: var(--color-background);
     }
 
     header {
@@ -131,7 +139,14 @@ header::before {
     .title_container{
         display: flex;
         justify-content: center;
-    }  
+    }
+
+    .title_h1 {
+        font-size: 2.5rem;
+    }
+
+
+
     .header_shadow_Mini {
         box-shadow: none;
         height: 100px;
@@ -159,9 +174,7 @@ header::before {
         left: 5px;
         align-items: center;
     }  
-    .menu-burguer:hover {
-        background-color: #F33;
-    }
+
     .menu-equ{
         display:none;             
     }
@@ -172,7 +185,7 @@ header::before {
     #menu-input:checked  ~ .nav_menu{
         display:flex;
         color: #FFF;
-        padding: 0 10px 0 10px;
+        /*padding: 0 10px 0 10px;*/
         transition: background 1s ease-in-out;
         text-align: start;
         align-items: flex-end;
@@ -200,7 +213,7 @@ header::before {
         align-items: center;
         width: 45px;
         height: 45px;
-        transition: all 5s ease-in-out;
+        transition: all 1s ease-in-out;
 
     }
     #menu-input {
@@ -210,19 +223,13 @@ header::before {
     #menu-input:checked .nav_menu{
         display:flex;
         justify-content: flex-end;
-        transition: all 5s ease-in-out;
+        transition: all 1s ease-in-out;
     }
-
-
 
     #menu-input:checked ~ .title_container{
         display:flex;
         justify-content: flex-end;
-        transition: all 5s ease-in-out;
-    }
-
-    .nav_menu_item:active {
-        background-color: #F33;
+        transition: all 1s ease-in-out;
     }
 
     .nav_menu_items {
@@ -235,22 +242,24 @@ header::before {
         top: 50px;
         left: 0;
         gap: 0;
-        transition: all 5s ease-in-out;
-
+        transition: all 1s ease-in-out;
     }
+
     .nav_menu_item {
         width: 100%;
         margin: 0;
-        border: 1px solid black;
-        transition: all 5s ease-in-out;
+        border: 1px solid var(--color-background);
+        transition: all 1s ease-in-out;
     }
+
     .nav_menu_link {
-        display: block;
+        display: inline-block;
         width: 100%;
-        padding: 10px;
+        border-radius: 0;
     }
+
     .nav_menu_link:hover {
-        background-color: burlywood;
+        background-color: var(--color-coquenicot-500);
     }
 
     .container_nav {
@@ -259,9 +268,14 @@ header::before {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .title_container{
         display: flex;
         justify-content: center;
+    }
+
+    .title_h1 {
+        font-size: 4rem;
     }
 
     header {

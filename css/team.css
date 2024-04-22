@@ -3,7 +3,7 @@
 .equipo {
     display: flex;
     flex-direction: column;
-    background-color: #B6B6B6;
+    background-color: var(--color-grisoscuro);
     padding-bottom: 1rem;
     height: auto;
 }
