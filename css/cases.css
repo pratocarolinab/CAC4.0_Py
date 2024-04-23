@@ -22,6 +22,10 @@
   margin-top: 2rem;
 }
 
+.cases-slider {
+  display: flex;
+}
+
 .case-card {
   display: flex;
   justify-content: center;
@@ -82,32 +86,41 @@
 
 
 /* -------- Mobile -------- */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 769px) {
   body {
       background-color: rgb(24, 24, 24);
   }
 
   .cases-container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
     margin-bottom: 3rem;
     margin-top: 2rem;
+    position: relative;
+    scroll-snap-align: center;
+  }
+
+  .cases-slider {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
   }
 
   .case-card {
     display: flex;
     justify-content: center;
-    width: auto;
-    margin-top: 10px;
+    width: autoa;
+    margin: 10px;
 }
+
+  .case-item {
+    width: 340px;
+  }
+
   .cases-title {
     margin-top: 5px;
     margin-bottom: -20px;
   }
 }
 /* ------ TABLETs ------ */
-@media only screen and (min-width: 600px) and (max-width: 769px) {
 
-}
 

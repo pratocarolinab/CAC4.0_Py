@@ -21,11 +21,20 @@
     height: auto;
 
 }
+
+.valoresTitle{
+    color: var(--color-background);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .valoresText{
     color: var(--color-background);
-    font-style: italic;
     font-size: 2.5rem;
     text-align: center;
+    font-weight: bold;
 }
 .valores_gradient {
     background: linear-gradient(90deg, #B861E0 0%, #7171E2 100%);

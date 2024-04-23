@@ -2,7 +2,7 @@
 /* Social Media Icons */
 .share-buttons-row{
     height: 40px;
-
+    justify-content: center;
 	display: -webkit-flex; 
     -webkit-align-items: center; 
     display: flex;

@@ -1,18 +1,4 @@
 /* This file is used to style the header of the website */
-*{
-    text-decoration: none; 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
-
-*,*::after,*::before{
-    text-decoration: none; 
-    margin: 0;
-    padding: 0;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -58,10 +44,11 @@ header::before {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4rem;
+    font-family: var(--font-roboto);
 }
 
 
-@layer navBar {
+
     nav{
         width: 100%;  
     }
@@ -75,11 +62,14 @@ header::before {
     .nav_menu_link {
         display: inline-block;
         align-items: center;
-        border: 1px solid var(--color-background);
-        border-radius: 5px;
-        padding: 10px 20px !important;
+        border-radius: 10px;
+        padding: 10px 20px;
         transition: all 0.5s ease-in-out;
+        border: 1px solid var(--color-coquenicot-solid);
         background-color: rgb(255, 56, 0, 0.7);
+        color: var(--font-color-light);
+        font-weight: bold;
+
     }
     .nav_menu_link:hover {
         background-color: rgb(255, 56, 0, 0.2);
@@ -98,9 +88,8 @@ header::before {
         display: flex;
         justify-content: flex-end;
     }
-}
 
-@layer Hamburger {
+
 /* Burguer */
     [type="checkbox"] {
         box-sizing: border-box;
@@ -118,7 +107,7 @@ header::before {
     #menu-input {
         display: none;
     }
-}
+
 
 
 /* -------- Mobile -------- */
@@ -144,8 +133,6 @@ header::before {
     .title_h1 {
         font-size: 2.5rem;
     }
-
-
 
     .header_shadow_Mini {
         box-shadow: none;
@@ -256,7 +243,13 @@ header::before {
         display: inline-block;
         width: 100%;
         border-radius: 0;
+        border: 1px solid var(--color-coquenicot-solid);
+        background-color: rgb(255, 56, 0, 0.9);
+        font-size: 2.5rem;
+        color: var(--font-color-light);
+        font-weight: bold;
     }
+
 
     .nav_menu_link:hover {
         background-color: var(--color-coquenicot-500);
