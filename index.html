@@ -265,14 +265,18 @@
 
             <!--Form -->
             <section class="section_contact">
-                <form action="POST" enctype="application/x-www-form-urlencoded">
+                <div class="form_container_options">
                     <h2 class="contact_title">Consultas</h2>
+                    <h2 class="contact_wizard">Presupuesto</h2>
+                </div>
+
+                <form action="POST" enctype="application/x-www-form-urlencoded">
 
                     <div class="contact_container">
                         <div class="contact_group">
                             <label class="contact_label form-label" for="completeName"></label>
                             <input
-                                class="contact_input form-control"
+                                class="contact_input form-control input-radius"
                                 type="text"
                                 name="completeName"
                                 id="completeName"
@@ -283,7 +287,7 @@
                         <div class="contact_group">
                             <label class="contact_label" for="email"></label>
                             <input
-                                class="contact_input form-control"
+                                class="contact_input form-control input-radius"
                                 type="email"
                                 name="email"
                                 id="email"
@@ -293,13 +297,13 @@
 
                         <div class="contact_group">
                             <label class="contact_label" for="phone"></label>
-                            <input class="contact_input" type="tel" name="phone" id="phone" placeholder="Telefono" />
+                            <input class="contact_input input-radius" type="tel" name="phone" id="phone" placeholder="Telefono" />
                         </div>
 
                         <div class="contact_group contact_group_message">
                             <label class="contact_label_message" for="message"></label>
                             <textarea
-                                class="contact_textarea"
+                                class="contact_textarea input-radius" cols="22" rows="4"
                                 name="message"
                                 id="message"
                                 placeholder="Ingrese su consulta"

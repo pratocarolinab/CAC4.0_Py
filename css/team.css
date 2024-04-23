@@ -60,9 +60,8 @@
     color: var(--color-background);
 }
 
-/* end of team.css */
-
-@media (max-width: 769px) {
+/* TABLET ===============================================================================================*/
+@media (max-width: 768px) {
     .contImagenesEquipo {
         /*position: relative;*/
         top: 5rem;

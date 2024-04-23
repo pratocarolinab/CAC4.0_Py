@@ -21,13 +21,27 @@ form{
     width:100%;
 }
 
+.form_container_options {
+    display: flex;
+}
+
+.form_container_options{
+    color: aliceblue;
+    padding: 5px;
+}
+
 .contact_title{
     color: aliceblue;
     padding: 5px;
 }
 
+.section_contact h2{
+    color: var(--color-verde);
+}
+
 .contact_suscribe{
-    font-size: 14px;
+    font-size: 12px;
+    color: var(--font-color-light);
 }
 
 .contact_checkbox{
@@ -43,22 +57,53 @@ form{
 }
 
 .contact_group{
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .contact_input{
     padding: 5px;
+    padding-left: 10px;
+    border-color: var(--color-violeta);
+    border-width: 1px;
+    background: none;
+    border-style: solid;
+}
+
+.input-radius {
+    display: block;
+    width: 60%;
+    border-radius: 10px;
+    font-family: var(--font-roboto-mono);
+    font-size: 1.6rem;
+    color: var(--color-grisclaro);
+}
+
+textarea {
+    border-color: var(--color-violeta);
+    border-width: 1px;
+    background: none;
+    border-style: solid;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .contact_button{
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(56, 44, 167, 0.6);
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--color-coquenicot);
+    background-color: rgb(255, 56, 0, 0.7);
+    color: var(--font-color-light);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 1px;
 }
 
 .contact_button:hover{
     cursor: pointer;
-    background-color: rgba(86, 35, 182, 0.7);
+    background-color: rgb(255, 56, 0, 0.2);
     color: white;
     transition: all 0.8s;
 }

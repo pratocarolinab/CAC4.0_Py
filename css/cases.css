@@ -86,7 +86,7 @@
 
 
 /* -------- Mobile -------- */
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   body {
       background-color: rgb(24, 24, 24);
   }

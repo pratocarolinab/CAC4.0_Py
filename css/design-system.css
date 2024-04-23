@@ -9,22 +9,22 @@
     --color-grisoscuro: #B6B6B6;
     --color-grisclaro: #E9E9E9;
 
-    --color-violeta-solid: rgb(184, 97, 224);
+    --color-violeta: rgb(184, 97, 224);
     --color-violeta-800: rgb(184, 97, 224, 0.8);
     --color-violeta-500: rgb(184, 97, 224, 0.5);
     --color-violeta-300: rgb(184, 97, 224, 0.3);
 
-    --color-mora-solid: rgb(113, 113, 226);
+    --color-mora: rgb(113, 113, 226);
     --color-mora-800: rgb(113, 113, 226, 0.8);
     --color-mora-500: rgb(113, 113, 226, 0.5);
     --color-mora-300: rgb(113, 113, 226, 0.3);
 
-    --color-verde-solid: rgb(31, 193, 174);
+    --color-verde: rgb(31, 193, 174);
     --color-verde-800: rgb(31, 193, 174, 0.8);
     --color-verde-500: rgb(31, 193, 174, 0.5);
     --color-verde-300: rgb(31, 193, 174, 0.3);
 
-    --color-coquenicot-solid: rgb(255, 56, 0);
+    --color-coquenicot: rgb(255, 56, 0);
     --color-coquenicot-800: rgb(255, 56, 0, 0.8);
     --color-coquenicot-500: rgb(255, 56, 0, 0.5);
     --color-coquenicot-300: rgb(255, 56, 0, 0.3);
