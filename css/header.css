@@ -65,8 +65,8 @@ header::before {
         border-radius: 10px;
         padding: 10px 20px;
         transition: all 0.5s ease-in-out;
-        border: 1px solid var(--color-coquenicot);
-        background-color: rgb(255, 56, 0, 0.7);
+        border: 1px solid var(--color-verde-300);
+        background-color: var(--color-verde-800);
         color: var(--font-color-light);
         font-weight: bold;
 
@@ -142,7 +142,7 @@ header::before {
 }
 
 /* TABLETs ========================================================================= */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     /* Hambur Menu */    
     .menu-burguer {
         display: flex;
@@ -243,10 +243,10 @@ header::before {
         display: inline-block;
         width: 100%;
         border-radius: 0;
-        border: 1px solid var(--color-coquenicot);
-        background-color: rgb(255, 56, 0, 0.9);
+        border: 1px solid rgb(113, 113, 226);
+        background-color: rgb(113, 113, 226, 0.95);
         font-size: 2.5rem;
-        color: var(--font-color-light);
+        color: var(--font-color-mora-dark);
         font-weight: bold;
     }
 

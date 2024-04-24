@@ -1,23 +1,29 @@
 /* This file contains the styles for the values section */
-.valores{
+.valores {
     display: flex;
     flex-wrap: wrap;
     background-color: #D9D9D9;
     padding: 0px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
 }
+
 .valoresImage{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .imgValoresImage {
-    height: 100%;
+    max-height: 100%;
 }
 
 .valores-container{
-    width: 50%;
+    width: 40%;
     padding: 4rem;
+    padding-bottom: 0;
     height: auto;
+    position: absolute;
 }
 
 .valoresTitle{
@@ -70,7 +76,7 @@
         width: 92%;
         position: absolute;
         padding: 1rem;
-        bottom: -40%;
+        bottom: 4%;
         z-index: 10;
         margin: 0 4%;
     }
@@ -81,7 +87,7 @@
         height: 100%;
         position: absolute;
         border-radius: 30px;
-        background-color: #D9D9D970;
+        background-color: #D9D9D990;
         left: 0;
         bottom: 0;
         backdrop-filter: blur(20px) ;

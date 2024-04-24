@@ -61,7 +61,7 @@
 }
 
 /* TABLET ===============================================================================================*/
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .contImagenesEquipo {
         /*position: relative;*/
         top: 5rem;
