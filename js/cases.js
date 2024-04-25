@@ -4,7 +4,7 @@
 // The API is called using the fetch() method, which returns a Promise that resolves to a Response object.
 // If an error occurs during the fetch, it is caught and logged to the console.
 
-let promise = fetch("https://randomuser.me/api/?page=3&results=3&seed=ttttttaa&nat=es&inc=gender,name,dob,picture&noinfo")
+let promise = fetch("https://randomuser.me/api/?page=3&results=3&seed=amtabcda&nat=es&inc=gender,name,dob,picture&noinfo")
     .then((response) => response.json())
     .then((data) => {
         for (let i = 0; i < 4; i++) {
