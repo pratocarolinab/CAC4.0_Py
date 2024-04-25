@@ -19,11 +19,33 @@
 }
 
 .valores-container{
-    width: 40%;
-    padding: 4rem;
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 5%;
+    width: 90%;
+    padding: 1rem;
     height: auto;
     position: absolute;
+    bottom: 2%;
+    z-index: 10;
+    margin: 0;
+}
+
+.valores-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 30px;
+    background-color: #D9D9D990;
+    bottom: 0;
+    backdrop-filter: blur(15px) ;
+    z-index: -5;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .valoresTitle{
@@ -73,12 +95,12 @@
     }
 
     .valores-container{
-        width: 92%;
+        width: 96%;
         position: absolute;
         padding: 1rem;
-        bottom: 4%;
+        bottom: 2%;
+        left: 2%;
         z-index: 10;
-        margin: 0 4%;
     }
 
     .valores-container::before {
@@ -90,7 +112,7 @@
         background-color: #D9D9D990;
         left: 0;
         bottom: 0;
-        backdrop-filter: blur(20px) ;
+        backdrop-filter: blur(15px) ;
         z-index: -5;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
@@ -110,6 +132,7 @@
         position: absolute;
         width: 96%;
         bottom: 2%;
+        left: 0%;
         margin: 0 2%;
     }
     .valoresText{
@@ -132,7 +155,8 @@
         border-radius: 30px;
         left: 0;
         bottom: 0;
-        backdrop-filter: blur(15px) brightness(1.2);
+        background-color: #D9D9D990;
+        backdrop-filter: blur(15px);
         z-index: -5;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
