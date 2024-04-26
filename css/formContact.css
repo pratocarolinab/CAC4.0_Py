@@ -34,6 +34,7 @@ form{
     color: aliceblue;
     padding: 5px;
     font-weight: bold;
+    text-shadow: 0px 0px 80px black;
 }
 
 .section_contact h2{
@@ -94,16 +95,18 @@ textarea {
 
 .contact_button{
     display: inline-block;
-    align-items: center;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     transition: all 0.5s ease-in-out;
     border: 1px solid var(--color-verde-300);
     background-color: var(--color-verde-800);
     color: var(--font-color-light);
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 1px;
+    box-shadow: 4px 4px 10px rgb(184, 97, 224, 0.3);
+    text-shadow: 0px 0px 25px black;
 }
 
 .contact_button:hover{
