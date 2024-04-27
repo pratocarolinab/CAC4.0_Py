@@ -36,10 +36,6 @@
   justify-content: center;
   height: 400px;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
   position: relative;
   border: 2px solid var(--color-violeta);
   padding-top: 45px;
@@ -63,10 +59,6 @@
   border-radius: 30px;
   padding: 10px;
   z-index: 99;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 
 .case-item-text::before {
@@ -79,10 +71,6 @@
   bottom: 2%;
   backdrop-filter: blur(10px) brightness(0.6);
   z-index: -5;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 
 .case-item {
@@ -90,9 +78,6 @@
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-
 }
 
 .case-item-name {
@@ -179,7 +164,7 @@
     position: absolute;
     border-radius: 40px;
     left: 0;
-    bottom: 0%;
+    bottom: 0;
     backdrop-filter: blur(30px) brightness(0.6);
     z-index: -5;
   }

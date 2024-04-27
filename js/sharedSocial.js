@@ -23,15 +23,11 @@ $(function() {
 	const MAIN_IMAGE_URL = encodeURIComponent($('meta[property="og:image"]').attr('content'));
 
 	$('.share-fb').click(function(){
-		open_window('http://www.facebook.com/sharer/sharer.php?u='+ARTICLE_URL, 'facebook_share');
+		open_window('https://www.facebook.com/sharer/sharer.php?u='+ARTICLE_URL, 'facebook_share');
 	});
 
 	$('.share-twitter').click(function(){
-		open_window('http://twitter.com/share?url='+ARTICLE_URL, 'twitter_share');
-	});
-
-	$('.share-google-plus').click(function(){
-		open_window('https://plus.google.com/share?url='+ARTICLE_URL, 'google_share');
+		open_window('https://twitter.com/share?url='+ARTICLE_URL, 'twitter_share');
 	});
 
 	$('.share-linkedin').click(function(){
@@ -43,7 +39,7 @@ $(function() {
 	});
 	
 	$('.share-tumblr').click(function(){
-		open_window('http://www.tumblr.com/share/link?url='+ARTICLE_URL+'&name='+ARTICLE_TITLE+'&description='+ARTICLE_TITLE, 'tumblr_share');
+		open_window('https://www.tumblr.com/share/link?url='+ARTICLE_URL+'&name='+ARTICLE_TITLE+'&description='+ARTICLE_TITLE, 'tumblr_share');
 	});
 
 	function open_window(url, name){

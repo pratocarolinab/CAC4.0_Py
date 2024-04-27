@@ -70,7 +70,7 @@ header::before {
         color: var(--font-color-light);
         font-weight: bold;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        text-shadow: 0px 0px 25px black;
+        text-shadow: 0 0 25px black;
     }
 
     .nav_menu_link:hover {
@@ -155,16 +155,13 @@ header::before {
         align-items: center;
         width: 45px;
         height: 45px;
-        margin: 0;
-        margin-left: 8px;
+        margin: 0 0 0 8px;
         padding: 0;
         cursor: pointer;
         top: 0.5%;
         left: 5px;
-        align-items: center;
         font-weight: bold;
-        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
-
+        box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
     }  
 
     .menu-equ{
@@ -205,7 +202,7 @@ header::before {
         height: 45px;
         transition: all 1s ease-in-out;
         font-weight: bold;
-        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
 
 
     }
@@ -229,8 +226,7 @@ header::before {
         display: flex;
         flex-direction: column;
         position: absolute;
-        margin: 0;
-        margin-top: 50px;
+        margin: 50px 0 0;
         padding: 0;
         top: 50px;
         left: 0;
