@@ -41,7 +41,6 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   position: relative;
-  background: var(--color-mora-300);
   border: 2px solid var(--color-violeta);
   padding-top: 45px;
   padding-bottom: 10px;
@@ -142,7 +141,6 @@
     align-items: center;
     width: 320px;
     height: 400px;
-    background: var(--color-mora-300);
     border: 2px solid var(--color-violeta);
   }
 
