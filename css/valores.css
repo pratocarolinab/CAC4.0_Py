@@ -102,18 +102,8 @@
     }
 
     .valores-container::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border-radius: 30px;
-        background-color: #D9D9D990;
         left: 0;
         bottom: 0;
-        backdrop-filter: blur(15px) ;
-        z-index: -5;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
     }
 }
 
@@ -141,22 +131,5 @@
         color: var(--color-background);
         font-size: 1.4rem;
         text-align: center;
-    }
-
-   .valores-container::before {
-       content: '';
-       width: 100%;
-       height: 100%;
-       position: absolute;
-       border-radius: 30px;
-       background-color: #D9D9D990;
-       left: 0;
-       bottom: 0;
-       backdrop-filter: blur(15px) ;
-       z-index: -5;
-       -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-
-        background-color: #D9D9D990;
     }
 }

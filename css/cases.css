@@ -173,7 +173,7 @@
 /* -------- MOBILE ==================================================================== -------- */
 @media only screen and (max-width: 599px) {
   .case-card {
-    height: 415px;
+    height: 390px;
   }
 
   .case-item-text {
