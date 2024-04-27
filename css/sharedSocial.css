@@ -23,7 +23,7 @@
 
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 10px;
+    border-radius: 5px;
 
 	text-align: center;
 	float: left;
@@ -32,6 +32,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 20px;
+}
+
+.share-buttons-row > div:hover{
+    border: 1px solid plum;
+    border-radius: 10px;
+    transition: all 0.5s;
 }
 
 .share-fb{
