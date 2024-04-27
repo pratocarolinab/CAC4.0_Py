@@ -4,47 +4,40 @@
     padding: 5px;
     background: var(--gradient);
     flex-direction: column;
-    align-items: center;
-    align-content: center;
 }
 
 .title_social{
-    justify-content: flex-start;
-    align-self:stretch;
-    align-items: center;
     font-family: Verdana, sans-serif;
     font-size: 24px;
     padding: 5px;
+    margin: 10px;
 
 }
 .links_social{
     font-size: 20px;
     border-radius: 10px;
 }
+
+.anchor_social {
+    display: flex;
+
+}
+
 .copy{
     font-size: 14px;
     font-style: italic;
     padding: 5px;
-    color: white;
-}
-
-#year {
-    color: white;
-}
-
-.flaticon{
-    font-size: 8px;
-    color: black;
+    margin: 10px;
+    text-shadow: 0px 0px 25px black;
 }
 
 .footer_social_links{
-    justify-content: flex-end;
-    align-content:baseline;
+    justify-content: center;
 }
 
 .logo_social{
-    height: 36px;
-    width: 36px;
+    height: 35px;
+    width: 35px;
 }
 
 .logo_social:hover{
