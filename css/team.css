@@ -10,7 +10,6 @@
 .equipo h2 {
     display: flex;
     position: relative;
-    /*top: 40px;*/
     text-align: center;
     font-family: 'Roboto Mono', sans-serif; ;
     width: 340px;
