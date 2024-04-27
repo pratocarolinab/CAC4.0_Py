@@ -27,7 +27,7 @@
 
 .circle{
     grid-column: 1;
-    width: 50%; 
+    width: 50%;
     justify-self: center;
     align-self: center;
     padding-top: 46%;
@@ -52,7 +52,7 @@
 
 .image_user{
     position: absolute; 
-    width: 60%; 
+    width: 60%;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%)

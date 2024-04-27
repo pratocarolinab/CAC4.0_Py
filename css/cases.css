@@ -25,7 +25,10 @@
 
 .cases-slider {
   display: flex;
-  gap: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 0 10px;
 }
 
 .case-card {
@@ -128,7 +131,7 @@
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    gap: 10px;
+    gap: 15px;
     margin: 0 10px;
   }
 
