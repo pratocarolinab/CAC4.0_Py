@@ -131,3 +131,15 @@ textarea {
     width: 20px;
     fill: white;
 }
+
+.error{
+    display: none;
+}
+
+.name{
+    display: none;
+}
+
+.error > h5{
+    color: rgb(255, 95, 95);
+}
