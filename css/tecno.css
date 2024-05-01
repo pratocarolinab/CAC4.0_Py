@@ -5,28 +5,37 @@
 .tecno_container{
     width: 100%;
     display: grid;
+    grid-template-rows: 10% 90%;
+    scroll-behavior: smooth; 
+    padding: 10px 15px 10px 15px;
+}
+.tecnos{
+    display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 50%;
-    scroll-behavior: smooth;
+    grid-auto-columns: 18%;
     overflow-x: auto;
+    scrollbar-width: none;
+    
 }
 
 .tecno{
+    grid-row: 2;
     width: 95%;
     margin: 0 auto;
-    display: grid;
     padding: 8px;
+ 
 }
 
 .tecno_title {
+    grid-row: 1;
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: #fff;
     text-align: center;
 }
 
 .circle{
-    grid-column: 1;
+    grid-row: 2;
     width: 50%;
     justify-self: center;
     align-self: center;
@@ -58,8 +67,8 @@
     transform: translate(-50%, -50%)
 }
 
-/* DESKTOP TABLET =================================================================================================== */
-@media (min-width: 319px){
+/* mobile tablet =================================================================================================== */
+@media only screen and (min-width: 319px) and (max-width: 780px) {
 
     .tecno_container{
         width: 100%;
@@ -83,5 +92,21 @@
         color: #fff;
         text-align: center;
         margin-top: 1rem;
+    }
+    .circle{
+        grid-column: 1;
+        width: 60px;
+        height: 60px;
+        justify-self: center;
+        align-self: center;
+        padding-top: 46%;
+        border-radius: 50%; 
+        border-bottom: 2px solid rgba(255, 255, 255, 0.911);
+        border-top: 2px solid rgb(0, 0, 0);
+        overflow: hidden; 
+        position: relative;
+        background: radial-gradient(circle, rgba(253,254,253,0.6979166666666667) 6%, rgba(141,142,141,1) 52%, rgba(116,117,116,1) 62%, rgba(20,20,20,1) 77%); 
+        transform: scale(1); 
+        animation: press 1s infinite alternate;  
     }
 }
