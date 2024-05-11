@@ -10,7 +10,7 @@
 // The setInterval function is used to call the passImages function every 2.5 seconds.
 window.onload = function() {
     const SLIDE__IMG = [
-        'assets/img/avatars-1.png',
+        "assets/img/avatars-1.png",
         'assets/img/avatars-2.png',
         'assets/img/avatars-3.png',
         'assets/img/avatars-4.png',];

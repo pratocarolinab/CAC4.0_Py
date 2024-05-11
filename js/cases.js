@@ -9,14 +9,14 @@ fetch("https://randomuser.me/api/?page=3&results=3&seed=amtabcda&nat=es&inc=gend
     .then((response) => response.json())
     .then((data) => {
         for (let i = 0; i < 4; i++) {
-            const user = data.results[i];
-            const name = user.name.first + " " + user.name.last;
-            const img_case = user.picture.large;
+            let user_api = data.results[i];
+            let name_api = user_api.name.first + " " + user_api.name.last;
+            let img_case_api = user_api.picture.large;
 
             let cases_item = document.querySelectorAll(".case-item");
-            let case_item_name = document.querySelectorAll(".case-item-name");
-            cases_item[i].setAttribute("src", img_case);
-            case_item_name[i].innerHTML = name;
+            let cases_item_name = document.querySelectorAll(".case-item-name");
+            cases_item[i].setAttribute("src", img_case_api);
+            cases_item_name[i].innerHTML = name_api;
         }
     })
     .catch((error) => {
