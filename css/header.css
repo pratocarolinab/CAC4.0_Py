@@ -39,7 +39,7 @@ header::before {
 
 .title_h1 {
     font-weight: bold;
-    background: linear-gradient(90deg, plum 0%, rgb(31, 193, 174) 100%);
+    background: linear-gradient(90deg, rgb(221, 160, 221) 0%, rgb(31, 193, 174) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,7 +68,7 @@ header::before {
         color: var(--font-color-light);
         font-weight: bold;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        text-shadow: 0 0 25px black;
+        text-shadow: 0 0 25px rgb(0, 0, 0);
     }
 
     .nav_menu_link:hover {
@@ -143,7 +143,7 @@ header::before {
     /* Hambur Menu */    
     .menu-burguer {
         display: flex;
-        color: plum;
+        color: rgb(221, 160, 221);
         border-radius: 10px;
         font-size: 4ch;
         justify-content: center;
@@ -168,7 +168,7 @@ header::before {
     
     #menu-input:checked  ~ .nav_menu{
         display:flex;
-        color: #FFF;
+        color: rgb(255, 255, 255);
         transition: background 1s ease-in-out;
         text-align: start;
         align-items: flex-end;
@@ -182,7 +182,7 @@ header::before {
     }
     #menu-input:checked  ~ .menu-equ{
         display: inline-flex;
-        color: plum;
+        color: rgb(221, 160, 221);
         padding: 0;
         margin: 0;
         border: none;

@@ -1,13 +1,13 @@
 /* Global variables - Design system */
 :root {
     /* Palette */
-    --clor-black: #000000;
-    --color-background: #181818;
-    --color-body: #181818;
+    --clor-black: rgb(0, 0, 0);
+    --color-background: rgb(24, 24, 24);
+    --color-body: rgb(24, 24, 24);
 
-    --color-gris: #808080;
-    --color-grisoscuro: #B6B6B6;
-    --color-grisclaro: #E9E9E9;
+    --color-gris: rgb(128, 128, 128);
+    --color-grisoscuro: rgb(182, 182, 182);
+    --color-grisclaro: rgb(233, 233, 233);
 
     --color-violeta: rgb(184, 97, 224);
     --color-violeta-800: rgb(184, 97, 224, 0.8);
@@ -33,16 +33,16 @@
 
 
 
-    --gradient: linear-gradient(to right, #B861E0, #7171E2);
-    --gradient-invert: linear-gradient(to right, #7171E2, #B861E0);
+    --gradient: linear-gradient(to right, rgb(184, 97, 224), rgb(113, 113, 226));
+    --gradient-invert: linear-gradient(to right, rgb(113, 113, 226), rgb(184, 97, 224));
 
     /* Typography */
     --font-roboto: 'Roboto', sans-serif;
     --font-roboto-mono: 'Roboto Mono', monospace;
 
     /* Font-colors */
-    --font-color-light: #f3f3f3;
-    --font-color-dark: #181818;
+    --font-color-light: rgb(243, 243, 243);
+    --font-color-dark: rgb(24, 24, 24);
 
     /* Font-sizes */
     --font-46: 4.6rem;

@@ -43,17 +43,17 @@
         </div>
         <nav class="nav_menu">
             <ul class="nav_menu_items">
-                <li class="nav_menu_item"><a class="nav_menu_link" href="#">Inicio</a></li>
-                <li class="nav_menu_item"><a class="nav_menu_link" href="#">Valores</a></li>
-                <li class="nav_menu_item"><a class="nav_menu_link" href="#carousel">Portfolio</a></li>
-                <li class="nav_menu_item"><a class="nav_menu_link" href="#Works">Trabajos Realizados</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#inicio">Inicio</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#navValores">Valores</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#navEquipo">Team</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <!--Main----------------------------------------------------------------------------------------------------->
-<main class="container">
+<main class="container" id="inicio">
     <!-- <a href="#"><svg class="circle_skill">
        <circle class="circle_html" cx="50" cy="50" r="30%"></circle>
      </svg></a>
@@ -93,7 +93,7 @@
             <p class="text2">Creamos productos digitales para una amplia variedad de
                 necesidades aplicando el método ágil de desarrollo de
                 software. Buscamos las herramientas, y
-                tecnología adecuadas para cada proyecto, con el objetivo de
+                tecnología adecuada para cada proyecto, con el objetivo de
                 desarrollar soluciones confiables, sostenibles, y eficientes.
             </p>
         </div>
@@ -227,7 +227,7 @@
 
 
 
-    <section class="cases-success-container">
+    <section class="cases-success-container" id="cases">
         <h2 class="cases-title">Nuestros clientes:</h2>
 
         <article class="cases-container">
@@ -236,7 +236,6 @@
 
                     <div id="app" data-v-app>
                         <div v-for="elemento in datos">
-                            {{console.log("ELEMENTO", elemento[0].name.first)}}
 
                             <div>{{elemento[0].name.first}}</div>
                             <div :style="styleImagenCases">
@@ -289,7 +288,7 @@
     </section>
 
     <!--Form ------------------------------------------------------------------------->
-    <section class="section_contact">
+    <section class="section_contact" id="contacto">
         <div class="form_container_options">
             <h2 class="contact_title">Consultas</h2>
             <!--                    <h2 class="contact_wizard">Presupuesto</h2>-->
@@ -359,7 +358,7 @@
                     </label>
                 </div>
                 <div class="form_send_container">
-                    <button class="form_send" type="submit" onclick="sendForm(event)">Enviar
+                    <button class="form_send" onclick="sendForm(event)" type="submit">Enviar
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="form_send_img" viewBox="0 0 16 16">
                             <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
