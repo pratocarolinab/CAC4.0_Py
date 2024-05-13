@@ -30,6 +30,7 @@
         <path d="m4 16 8-8 8 8"></path>
     </svg>
 </button>
+
 <!--Header------------------------------------------------------------------------------------------------>
 <header id="headerId" class="container header_shadow_Mini">
 
@@ -39,7 +40,9 @@
         <label class="menu-burguer" for="menu-input">&#9776;</label>
         <label class="menu-equ" for="menu-input">X</label>
         <div class="title_container">
-            <h1 class="title_h1">{eMMe}</h1>
+            <a href="#inicio">
+                <h1 class="title_h1">{eMMe}</h1>
+            </a>
         </div>
         <nav class="nav_menu">
             <ul class="nav_menu_items">
@@ -191,89 +194,17 @@
         </ul>
     </section>-->
 
-    <!--&lt;!&ndash; Success cases -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
-                <section class="cases-success-container">
-                    <h2 class="cases-title">Nuestros clientes:</h2>
-
-                    <article class="cases-container">
-                        <div class="cases-slider">
-                        <picture class="case-card">
-                            <img class="case-item" src="" alt="imagen de caso de exito">
-                            <p class="case-item-name"></p>
-                            <p class="case-item-text">"Excelente diseño, muy profesional y responsable. El equipo de trabajo es muy amable y
-                                comprometido con el proyecto. Me encantó la atención y la calidad del producto."</p>
-                        </picture>
-                        <picture class="case-card">
-                            <img class="case-item" src="" alt="imagen de caso de exito">
-                            <p class="case-item-name"></p>
-                            <p class="case-item-text">"Equipo de trabajo muy profesional, responsable y comprometido
-                                con el proyecto. Diseño muy bueno, la experiencia del usuario es excelente y el
-                                producto es de calidad."</p>
-
-                        </picture>
-                        <picture class="case-card">
-                            <img class="case-item" src="" alt="imagen de caso de exito">
-                            <p class="case-item-name"></p>
-                            <p class="case-item-text">"El equipo de eMMe es muy profesional. Gran diseño, la
-                                experiencia del
-                                usuario es fenomenal y el producto es de gran calidad. Me encantó la atención y la
-                                calidad del producto."</p>
-                        </picture>
-                        </div>
-                    </article>
-                </section>-->
-
     <!-- Success cases ------------------------------------------------------------------------->
-
     <section class="cases-success-container" id="cases">
         <h2 class="cases-title">Nuestros clientes:</h2>
-
-        <article class="cases-container">
-
-            <div id="app" data-v-app>
-
-                <div class="cases-slider">
-
-                    <div v-for="elemento in datos">
-
-                        <div v-for="items in elemento"  :style="styleCaseCard">
-
-                            {{console.log('ELEMENTO', elemento)}}
-                            {{console.log('ITEMS', items)}}
-
-                            <img  :src="items.picture.large" alt="imagen de caso de exito"
-                                 :style="styleCaseItem">
-                            <p :style="styleCaseItemName">{{elemento[0].name.first}}</p>
-
-                            <p :style="styleCaseItemText">"Excelente diseño, muy profesional y responsable. El
-                                equipo de trabajo es muy amable y comprometido con el proyecto.
-                                Me encantó la atención y la calidad del producto."</p>
-
-                        </div>
-
-                    </div>
+        <article id="app" class="cases-container" data-v-app>
+            <div v-for="elemento in datos" class="cases-slider">
+                <div v-for="(items, index) in elemento" class="case-card">
+                    <img :src="items.picture.large" alt="imagen de caso de exito" class="case-item">
+                    <p class="case-item-name">{{items.name.first + ' ' + items.name.last}}</p>
+                    <p class="case-item-text">{{caseText[index]}}</p>
                 </div>
-
             </div>
-
-
-            <!--<picture class="case-card">
-                <img class="case-item" src="" alt="imagen de caso de exito">
-                <p class="case-item-name"></p>
-                <p class="case-item-text">"Equipo de trabajo muy profesional, responsable y comprometido
-                    con el proyecto. Diseño muy bueno, la experiencia del usuario es excelente y el
-                    producto es de calidad."</p>
-
-            </picture>
-            <picture class="case-card">
-                <img class="case-item" src="" alt="imagen de caso de exito">
-                <p class="case-item-name"></p>
-                <p class="case-item-text">"El equipo de eMMe es muy profesional. Gran diseño, la
-                    experiencia del
-                    usuario es fenomenal y el producto es de gran calidad. Me encantó la atención y la
-                    calidad del producto."</p>
-            </picture>-->
-            <!--            </div>-->
         </article>
     </section>
 
@@ -390,7 +321,7 @@
                                     rel="noopener"><img class="logo_social" src="./assets/svg/instagram.svg"
                                                         alt="logo instagram"/></a></li>
     </ul>
-    <p class="copy"> &copy; Copyright {eMMe} - <span id="year"></span> | <span>v 2024.0427.1537</span></p>
+    <p class="copy"> &copy; Copyright {eMMe} - <span id="year"></span> | <span>v 2024.0513.0029</span></p>
 </footer>
 
 <script src="./js/vue.global.js"></script>
