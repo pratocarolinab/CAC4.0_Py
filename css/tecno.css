@@ -78,12 +78,16 @@
         padding: 1rem;
     }
 
-    .tecno{
-        width: 100%;
+    #tecnos{
+
     }
 
     .tecnos {
         display: flex;
+    }
+
+    .tecno{
+        width: 100%;
     }
 
     .tecno_title {
