@@ -177,14 +177,16 @@ header::before {
     #menu-input:checked  ~ .nav_menu{
         display:flex;
         color: rgb(255, 255, 255);
-        transition: background 1s ease-in-out;
         text-align: start;
         align-items: flex-end;
+        justify-content: flex-end;
+        transition: all 1s ease-in-out;
         -webkit-transition: background 1s ease-in-out;
         -moz-transition: background 1s ease-in-out;
         -ms-transition: background 1s ease-in-out;
         -o-transition: background 1s ease-in-out;
-}
+    }
+
     #menu-input:checked  ~ .menu-burguer{
         visibility: hidden;   
     }
@@ -206,17 +208,10 @@ header::before {
         transition: all 1s ease-in-out;
         font-weight: bold;
         box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
-
-
     }
+
     #menu-input {
         display: none;        
-    }
-
-    #menu-input:checked .nav_menu{
-        display:flex;
-        justify-content: flex-end;
-        transition: all 1s ease-in-out;
     }
 
     #menu-input:checked ~ .title_container{
