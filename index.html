@@ -225,48 +225,55 @@
 
     <!-- Success cases ------------------------------------------------------------------------->
 
-
-
     <section class="cases-success-container" id="cases">
         <h2 class="cases-title">Nuestros clientes:</h2>
 
         <article class="cases-container">
-            <div class="cases-slider">
-                <picture class="case-card">
 
-                    <div id="app" data-v-app>
-                        <div v-for="elemento in datos">
+            <div id="app" data-v-app>
 
-                            <div>{{elemento[0].name.first}}</div>
-                            <div :style="styleImagenCases">
-                                <img :src="elemento[0].picture.large" alt="">
-                            </div>
+                <div class="cases-slider">
+
+                    <div v-for="elemento in datos">
+
+                        <div v-for="items in elemento"  :style="styleCaseCard">
+
+                            {{console.log('ELEMENTO', elemento)}}
+                            {{console.log('ITEMS', items)}}
+
+                            <img  :src="items.picture.large" alt="imagen de caso de exito"
+                                 :style="styleCaseItem">
+                            <p :style="styleCaseItemName">{{elemento[0].name.first}}</p>
+
+                            <p :style="styleCaseItemText">"Excelente diseño, muy profesional y responsable. El
+                                equipo de trabajo es muy amable y comprometido con el proyecto.
+                                Me encantó la atención y la calidad del producto."</p>
+
                         </div>
+
                     </div>
+                </div>
 
-                    <img class="case-item" src="" alt="imagen de caso de exito">
-                    <p class="case-item-name"></p>
-                    <p class="case-item-text">"Excelente diseño, muy profesional y responsable. El equipo de trabajo
-                        es muy amable y
-                        comprometido con el proyecto. Me encantó la atención y la calidad del producto."</p>
-                </picture>
-                <picture class="case-card">
-                    <img class="case-item" src="" alt="imagen de caso de exito">
-                    <p class="case-item-name"></p>
-                    <p class="case-item-text">"Equipo de trabajo muy profesional, responsable y comprometido
-                        con el proyecto. Diseño muy bueno, la experiencia del usuario es excelente y el
-                        producto es de calidad."</p>
-
-                </picture>
-                <picture class="case-card">
-                    <img class="case-item" src="" alt="imagen de caso de exito">
-                    <p class="case-item-name"></p>
-                    <p class="case-item-text">"El equipo de eMMe es muy profesional. Gran diseño, la
-                        experiencia del
-                        usuario es fenomenal y el producto es de gran calidad. Me encantó la atención y la
-                        calidad del producto."</p>
-                </picture>
             </div>
+
+
+            <!--<picture class="case-card">
+                <img class="case-item" src="" alt="imagen de caso de exito">
+                <p class="case-item-name"></p>
+                <p class="case-item-text">"Equipo de trabajo muy profesional, responsable y comprometido
+                    con el proyecto. Diseño muy bueno, la experiencia del usuario es excelente y el
+                    producto es de calidad."</p>
+
+            </picture>
+            <picture class="case-card">
+                <img class="case-item" src="" alt="imagen de caso de exito">
+                <p class="case-item-name"></p>
+                <p class="case-item-text">"El equipo de eMMe es muy profesional. Gran diseño, la
+                    experiencia del
+                    usuario es fenomenal y el producto es de gran calidad. Me encantó la atención y la
+                    calidad del producto."</p>
+            </picture>-->
+            <!--            </div>-->
         </article>
     </section>
 
