@@ -43,7 +43,7 @@ const phoneValidators = () => {
     });
 }
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+document.querySelector('#contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
     var completeName = document.getElementById('completeName').value;
     const name = document.querySelector(".name");
