@@ -53,7 +53,7 @@ goTop = (() => {
     item.addEventListener("click", () => {
       menu_equ.style.visibility = "hidden";
       menu_burguer.style.visibility = "visible";
-      nav_menu.style.visibility = "hidden";
+      // nav_menu.style.visibility = "hidden";
        if (menu_input.checked == true) {
          menu_input.checked = false;
        }
