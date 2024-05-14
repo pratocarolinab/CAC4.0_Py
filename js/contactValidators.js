@@ -64,7 +64,6 @@ document.querySelector('#contactForm').addEventListener('submit', function (even
         form_send.setAttribute('data-bs-toggle', 'modal');
         form_send.setAttribute('data-bs-target', '#exampleModal');
         // this.submit();
-        event.preventDefault();
     }
    
 });
