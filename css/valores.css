@@ -49,9 +49,11 @@
 
 .valoresTitle{
     color: var(--color-background);
+    color: rgb(24, 24, 24, 0.7);
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    font-style: italic;
     margin-bottom: 1rem;
 }
 
@@ -73,6 +75,7 @@
     color: var(--color-background);
     font-size: 1.8rem;
     text-align: center;
+    font-weight: 500;
 }
 
 /* TABLETS =============================================================================================*/

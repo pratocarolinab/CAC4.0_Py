@@ -68,7 +68,13 @@ form{
 }
 
 .contact_link_terms {
-    color: var(--color-gris);
+    color: rgb(113, 113, 226, 0.8);
+    font-weight: bold;
+}
+
+.contact_link_terms:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .contact_input{

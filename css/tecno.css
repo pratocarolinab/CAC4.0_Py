@@ -15,7 +15,6 @@
     grid-auto-columns: 18%;
     overflow-x: auto;
     scrollbar-width: none;
-    
 }
 
 .tecno{
@@ -23,15 +22,15 @@
     width: 95%;
     margin: 0 auto;
     padding: 8px;
- 
 }
 
 .tecno_title {
-    grid-row: 1;
     font-size: 3.5rem;
+    font-weight: bold;
     margin-bottom: 3rem;
     color: rgb(255, 255, 255);
     text-align: center;
+    font-style: italic;
 }
 
 .circle{
@@ -93,6 +92,7 @@
         text-align: center;
         margin-top: 1rem;
     }
+
     .circle{
         grid-column: 1;
         width: 60px;

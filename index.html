@@ -59,7 +59,7 @@
 </header>
 
 <!--Main----------------------------------------------------------------------------------------------------->
-<main class="container" >
+<main class="container">
     <!-- <a href="#"><svg class="circle_skill">
        <circle class="circle_html" cx="50" cy="50" r="30%"></circle>
      </svg></a>
@@ -91,7 +91,7 @@
             <img class="imgValoresImage" src="./assets/img/computadoras.png" alt=""/>
         </div>
         <div class="valores-container">
-            <h2 class="valoresTitle">En {eMMe}</h2>
+            <h2 class="valoresTitle">Valores {eMMe}</h2>
             <h4 class="valoresText">Transformamos <span class="valores_gradient">negocios con soluciones digitales
                         poderosas, modernas y adaptables</span> que satisfacen las
                 necesidades de hoy, desbloqueando las oportunidades del
@@ -108,7 +108,7 @@
 
     <!-- Tecnologias  ------------------------------------------------------------------------>
     <a class="anchor" id="tecnos"></a>
-    <div class="tecno_container" >
+    <div class="tecno_container">
         <div class="tecno_title_container">
             <h2 class="tecno_title">Tecnologías</h2>
         </div>
@@ -154,7 +154,7 @@
 
     <!--TEAM------------------------------------------------------------------------->
     <a class="anchor" id="navEquipo"></a>
-    <section class="equipo" >
+    <section class="equipo">
         <h2>{eMMe} team</h2>
         <div class="contImagenesEquipo">
             <div class="equipo-img-container">
@@ -236,7 +236,7 @@
     <a class="anchor" id="contacto"></a>
     <section class="section_contact">
         <div class="form_container_options">
-            <h2 class="contact_title">Consultas</h2>
+            <h2 class="contact_title">Consultanos</h2>
             <!--                    <h2 class="contact_wizard">Presupuesto</h2>-->
         </div>
 
@@ -304,7 +304,7 @@
                     </label>
                 </div>
                 <div class="form_send_container">
-                    <button class="form_send" onclick="sendForm(event)" type="submit">Enviar
+                    <button class="form_send" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="sendForm(event)" type="submit">Enviar
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="form_send_img" viewBox="0 0 16 16">
                             <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
@@ -314,6 +314,27 @@
             </div>
         </form>
     </section>
+
+    <!-- Modal_Form ------------------------------------------------------------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header bg-success">
+<!--                    <h5 class="modal-title">Gracias por contactarnos</h5>-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-black text-center text-success" >
+                    <p>Gracias por contactarnos, en breve nos comunicaremos con usted.</p>
+                    <br>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <!-- Footer ----------------------------------------------------------------------------------->
@@ -332,6 +353,7 @@
     <p class="copy"> &copy; Copyright {eMMe} - <span id="year"></span> | <span>v 2024.0513.0029</span></p>
 </footer>
 
+<script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/vue.global.js"></script>
 <script src="./js/onScroll_btn-top_navBar.js"></script>
 <script src="./js/year.js"></script>
