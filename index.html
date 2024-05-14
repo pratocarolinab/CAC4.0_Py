@@ -50,8 +50,9 @@
         <nav class="nav_menu">
             <ul class="nav_menu_items">
                 <li class="nav_menu_item"><a class="nav_menu_link" href="#navValores">Valores</a></li>
-                <li class="nav_menu_item"><a class="nav_menu_link" href="#navEquipo">Team</a></li>
                 <li class="nav_menu_item"><a class="nav_menu_link" href="#tecnos">Tecnologías</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#navEquipo">Team</a></li>
+                <li class="nav_menu_item"><a class="nav_menu_link" href="#cases">Clientes</a></li>
                 <li class="nav_menu_item"><a class="nav_menu_link" href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
@@ -203,7 +204,7 @@
     <!-- Success cases ------------------------------------------------------------------------->
     <a class="anchor" id="cases"></a>
     <section class="cases-success-container">
-        <h2 class="cases-title">Nuestros clientes:</h2>
+        <h2 class="cases-title">Nuestros clientes</h2>
         <article id="app" class="cases-container" data-v-app>
             <div v-for="elemento in datos" class="cases-slider">
                 <div v-for="(items, index) in elemento" class="case-card">
@@ -302,7 +303,7 @@
 
                 <div class="contact_group">
                     <label class="contact_suscribe">Acepto los
-                        <a class="contact_link_terms" href="">términos y condiciones</a></label>
+                        <a class="contact_link_terms" href="#contact_link_terms" data-bs-toggle="modal" data-bs-target="#contact_link_terms">términos y condiciones</a></label>
                     <label>
                         <input class="contact_checkbox" type="checkbox">
                     </label>
@@ -318,6 +319,41 @@
             </div>
         </form>
     </section>
+
+    <!-- Modal_Terms ------------------------------------------------------------------------------->
+    <div class="modal fade" id="contact_link_terms" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-terms-content">
+                <div class="modal-header modal-terms-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-terms-body modal-terms-text" >
+                    <h4>Términos y condiciones</h4>
+                    <br>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris vel tincidunt
+                        malesuada, velit turpis malesuada velit, vel ultricies velit sapien eu velit. Sed euismod, mauris
+                        vel tincidunt malesuada, velit turpis malesuada velit, vel ultricies velit sapien eu velit. Sed
+                        euismod, mauris vel tincidunt malesuada, velit turpis malesuada velit, vel ultricies velit sapien
+                        eu velit. Sed euismod, mauris vel tincidunt malesuada, velit turpis malesuada velit, vel
+                        ultricies velit sapien eu velit. Sed euismod, mauris vel tincidunt malesuada, velit turpis
+                        malesuada velit, vel ultricies velit sapien eu velit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris vel tincidunt
+                        malesuada, velit turpis malesuada velit, vel ultricies velit sapien eu velit. Sed euismod, mauris
+                        vel tincidunt malesuada, velit turpis malesuada velit, vel ultricies velit sapien eu velit. Sed
+                        euismod, mauris vel tincidunt malesuada, velit turpis malesuada velit, vel ultricies velit sapien
+                        eu velit. Sed euismod, mauris vel tincidunt malesuada, velit turpis malesuada velit, vel
+                        ultricies velit sapien eu velit. Sed euismod, mauris vel tincidunt malesuada, velit turpis
+                        malesuada velit, vel ultricies velit sapien eu velit.
+                    </p>
+                </div>
+                <div class="modal-footer modal-terms-footer">
+                    <button type="button" class="btn btn-secondary btn-terms-close" data-bs-dismiss="modal">Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal_Form ------------------------------------------------------------------------------->
     <div class="modal fade" id="exampleModal" tabindex="-1">
@@ -354,7 +390,7 @@
                                     rel="noopener"><img class="logo_social" src="./assets/svg/instagram.svg"
                                                         alt="logo instagram"/></a></li>
     </ul>
-    <p class="copy"> &copy; Copyright {eMMe} - <span id="year"></span> | <span>v 2024.0513.0029</span></p>
+    <p class="copy"> &copy;Copyright {eMMe} - <span id="year"></span> | <span>v024.0514.1510</span></p>
 </footer>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
