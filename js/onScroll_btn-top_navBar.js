@@ -54,15 +54,9 @@ goTop = (() => {
       menu_equ.style.visibility = "hidden";
       menu_burguer.style.visibility = "visible";
       // nav_menu.style.visibility = "hidden";
-<<<<<<< HEAD
       if (menu_input.checked == true) {
         menu_input.checked = false;
       }
-=======
-       if (menu_input.checked == true) {
-         menu_input.checked = false;
-       }
->>>>>>> 9cdb8bc70f51f10dbc8a211363d26944b075c098
 
     });
   });}
@@ -75,13 +69,5 @@ goTop = (() => {
     })
   }
   equShow();
-<<<<<<< HEAD
 
 })();
-=======
-  
-})();
-
-
-
->>>>>>> 9cdb8bc70f51f10dbc8a211363d26944b075c098
