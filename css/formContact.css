@@ -140,9 +140,13 @@ textarea {
 
 .error{
     display: none;
-}
+} 
 
 .name{
+    display: none;
+}
+
+.phone{
     display: none;
 }
 

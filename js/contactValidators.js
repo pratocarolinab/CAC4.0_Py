@@ -29,6 +29,20 @@ const emailValidators = () => {
    
 }
 
+const phoneValidators = () => {
+    const phone = document.querySelector(".phone");
+    const phoneInput = document.querySelector("#phone");
+    phoneInput.addEventListener('input', (event) => {
+        let valueInput = event.target.value
+        if (valueInput.length == 0) {
+            phone.style.display = 'none';
+        } else if (valueInput.length < 7 || valueInput.length > 15) {
+            phone.style.display = 'block';
+        } else if (valueInput.length > 7 && valueInput.length <= 15)
+            phone.style.display = 'none';
+    });
+}
+
 const sendForm = (event) => {
      event.preventDefault();
      
@@ -37,3 +51,4 @@ const sendForm = (event) => {
 
 contactValidators();
 emailValidators();
+phoneValidators();
