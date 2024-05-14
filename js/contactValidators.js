@@ -18,15 +18,15 @@ const emailValidators = () => {
     const errEmail = document.querySelector('.email');
     email.addEventListener('input', (event) => {
         valueEmail = event.target.value
-        const validatorsEmail  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+        const validatorsEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         console.log(validatorsEmail.test(valueEmail))
-        if(!validatorsEmail.test(valueEmail)) {
+        if (!validatorsEmail.test(valueEmail)) {
             errEmail.style.display = 'block';
         } else {
             errEmail.style.display = 'none';
-        } 
+        }
     });
-   
+
 }
 
 const phoneValidators = () => {
@@ -43,10 +43,30 @@ const phoneValidators = () => {
     });
 }
 
-const sendForm = (event) => {
-     event.preventDefault();
-     
-}
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var completeName = document.getElementById('completeName').value;
+    const name = document.querySelector(".name");
+    const email = document.getElementById("email").value;
+    const errEmail = document.querySelector('.email');
+    const form_send = document.querySelector(".form_send");
+    const phoneInput = document.querySelector("#phone").value;
+    const phone = document.querySelector(".phone");
+    
+    if (completeName.trim() === '') {
+        name.style.display = 'block';
+        completeName.focus();
+    } else if (email.trim() === '') {
+        errEmail.style.display = 'block';
+    } else if (phoneInput.trim() === '') {
+        phone.style.display = 'block';
+    }else{
+        form_send.setAttribute('data-bs-toggle', 'modal');
+        form_send.setAttribute('data-bs-target', '#exampleModal');
+        // this.submit();
+    }
+   
+});
 
 
 contactValidators();
