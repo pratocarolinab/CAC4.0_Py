@@ -53,18 +53,21 @@ goTop = (() => {
     item.addEventListener("click", () => {
       menu_equ.style.visibility = "hidden";
       menu_burguer.style.visibility = "visible";
-      nav_menu.style.visibility = "hidden";
-       if (menu_input.checked == true) {
-         menu_input.checked = false;
-       }
+      // nav_menu.style.visibility = "hidden";
+      if (menu_input.checked == true) {
+        menu_input.checked = false;
+      }
 
     });
   });}
   menuNoShow();
   console.log('INPUT2', menu_input.checked);
 
+  let equShow = () => {
+    menu_equ.addEventListener("click", () => {
+      menu_burguer.style.visibility = "visible";
+    })
+  }
+  equShow();
 
 })();
-
-
-
