@@ -63,7 +63,13 @@ goTop = (() => {
   menuNoShow();
   console.log('INPUT2', menu_input.checked);
 
-
+  let equShow = () => {
+    menu_equ.addEventListener("click", () => {
+      menu_burguer.style.visibility = "visible";
+    })
+  }
+  equShow();
+  
 })();
 
 
