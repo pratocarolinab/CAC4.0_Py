@@ -64,7 +64,7 @@ goTop = (() => {
   console.log('INPUT2', menu_input.checked);
 
 
-});
+})();
 
 
 
