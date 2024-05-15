@@ -9,7 +9,7 @@ const contactValidators = () => {
         } else if (valueInput.length < 3 || valueInput.length > 40) {
             name.style.display = 'block';
         } else if (valueInput.length > 3 && valueInput.length <= 40)
-            name.style.display = 'none';
+        name.style.display = 'none';
     });
 }
 
@@ -45,7 +45,7 @@ const phoneValidators = () => {
 
 const sendForm = (event) => {
      event.preventDefault();
-     
+
 }
 
 
